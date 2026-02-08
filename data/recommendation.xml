@@ -1,0 +1,2887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clusters>
+   <thresholds>
+      <price q33="33.31" q66="38.17"/>
+      <sunshine q33="0" q66="114"/>
+   </thresholds>
+   <sample datetime="2025-05-01T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.85</price>
+   </sample>
+   <sample datetime="2025-05-01T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.58</price>
+   </sample>
+   <sample datetime="2025-05-01T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.16</price>
+   </sample>
+   <sample datetime="2025-05-01T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.91</price>
+   </sample>
+   <sample datetime="2025-05-01T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.39</price>
+   </sample>
+   <sample datetime="2025-05-01T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>9</sunshine>
+      <price>27.39</price>
+   </sample>
+   <sample datetime="2025-05-01T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>94</sunshine>
+      <price>39.02</price>
+   </sample>
+   <sample datetime="2025-05-01T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>238</sunshine>
+      <price>37.39</price>
+   </sample>
+   <sample datetime="2025-05-01T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>371</sunshine>
+      <price>34.92</price>
+   </sample>
+   <sample datetime="2025-05-01T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>533</sunshine>
+      <price>36.95</price>
+   </sample>
+   <sample datetime="2025-05-01T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>650</sunshine>
+      <price>37.47</price>
+   </sample>
+   <sample datetime="2025-05-01T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>722</sunshine>
+      <price>37.46</price>
+   </sample>
+   <sample datetime="2025-05-01T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>597</sunshine>
+      <price>39.59</price>
+   </sample>
+   <sample datetime="2025-05-01T13:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>599</sunshine>
+      <price>33.12</price>
+   </sample>
+   <sample datetime="2025-05-01T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>559</sunshine>
+      <price>33.69</price>
+   </sample>
+   <sample datetime="2025-05-01T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>471</sunshine>
+      <price>37.17</price>
+   </sample>
+   <sample datetime="2025-05-01T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>358</sunshine>
+      <price>35.82</price>
+   </sample>
+   <sample datetime="2025-05-01T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>214</sunshine>
+      <price>42.8</price>
+   </sample>
+   <sample datetime="2025-05-01T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>71</sunshine>
+      <price>39.14</price>
+   </sample>
+   <sample datetime="2025-05-01T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>6</sunshine>
+      <price>37.62</price>
+   </sample>
+   <sample datetime="2025-05-01T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>46.26</price>
+   </sample>
+   <sample datetime="2025-05-01T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.41</price>
+   </sample>
+   <sample datetime="2025-05-01T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34</price>
+   </sample>
+   <sample datetime="2025-05-01T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.01</price>
+   </sample>
+   <sample datetime="2025-05-02T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.77</price>
+   </sample>
+   <sample datetime="2025-05-02T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.08</price>
+   </sample>
+   <sample datetime="2025-05-02T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.56</price>
+   </sample>
+   <sample datetime="2025-05-02T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.61</price>
+   </sample>
+   <sample datetime="2025-05-02T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.66</price>
+   </sample>
+   <sample datetime="2025-05-02T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>10</sunshine>
+      <price>27.28</price>
+   </sample>
+   <sample datetime="2025-05-02T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>90</sunshine>
+      <price>34.66</price>
+   </sample>
+   <sample datetime="2025-05-02T07:00:00" cluster="2" recommendation="SELL">
+      <sunshine>219</sunshine>
+      <price>39.56</price>
+   </sample>
+   <sample datetime="2025-05-02T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>355</sunshine>
+      <price>35.83</price>
+   </sample>
+   <sample datetime="2025-05-02T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>537</sunshine>
+      <price>33.74</price>
+   </sample>
+   <sample datetime="2025-05-02T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>635</sunshine>
+      <price>41.33</price>
+   </sample>
+   <sample datetime="2025-05-02T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>715</sunshine>
+      <price>35.2</price>
+   </sample>
+   <sample datetime="2025-05-02T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>737</sunshine>
+      <price>39.49</price>
+   </sample>
+   <sample datetime="2025-05-02T13:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>688</sunshine>
+      <price>32.98</price>
+   </sample>
+   <sample datetime="2025-05-02T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>642</sunshine>
+      <price>34.88</price>
+   </sample>
+   <sample datetime="2025-05-02T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>508</sunshine>
+      <price>39.45</price>
+   </sample>
+   <sample datetime="2025-05-02T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>376</sunshine>
+      <price>41.08</price>
+   </sample>
+   <sample datetime="2025-05-02T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>194</sunshine>
+      <price>42.37</price>
+   </sample>
+   <sample datetime="2025-05-02T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>74</sunshine>
+      <price>41.51</price>
+   </sample>
+   <sample datetime="2025-05-02T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>4</sunshine>
+      <price>40.96</price>
+   </sample>
+   <sample datetime="2025-05-02T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.42</price>
+   </sample>
+   <sample datetime="2025-05-02T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.42</price>
+   </sample>
+   <sample datetime="2025-05-02T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.94</price>
+   </sample>
+   <sample datetime="2025-05-02T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.97</price>
+   </sample>
+   <sample datetime="2025-05-03T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.55</price>
+   </sample>
+   <sample datetime="2025-05-03T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>24.33</price>
+   </sample>
+   <sample datetime="2025-05-03T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.51</price>
+   </sample>
+   <sample datetime="2025-05-03T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.09</price>
+   </sample>
+   <sample datetime="2025-05-03T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.51</price>
+   </sample>
+   <sample datetime="2025-05-03T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.08</price>
+   </sample>
+   <sample datetime="2025-05-03T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>37.92</price>
+   </sample>
+   <sample datetime="2025-05-03T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.72</price>
+   </sample>
+   <sample datetime="2025-05-03T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>90</sunshine>
+      <price>34.18</price>
+   </sample>
+   <sample datetime="2025-05-03T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>260</sunshine>
+      <price>35.24</price>
+   </sample>
+   <sample datetime="2025-05-03T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>588</sunshine>
+      <price>39.85</price>
+   </sample>
+   <sample datetime="2025-05-03T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>585</sunshine>
+      <price>41.79</price>
+   </sample>
+   <sample datetime="2025-05-03T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>600</sunshine>
+      <price>37.42</price>
+   </sample>
+   <sample datetime="2025-05-03T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>668</sunshine>
+      <price>38.3</price>
+   </sample>
+   <sample datetime="2025-05-03T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>544</sunshine>
+      <price>35.54</price>
+   </sample>
+   <sample datetime="2025-05-03T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>457</sunshine>
+      <price>35.27</price>
+   </sample>
+   <sample datetime="2025-05-03T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>302</sunshine>
+      <price>41.3</price>
+   </sample>
+   <sample datetime="2025-05-03T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>183</sunshine>
+      <price>45.93</price>
+   </sample>
+   <sample datetime="2025-05-03T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>55</sunshine>
+      <price>41.64</price>
+   </sample>
+   <sample datetime="2025-05-03T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>6</sunshine>
+      <price>44.87</price>
+   </sample>
+   <sample datetime="2025-05-03T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.94</price>
+   </sample>
+   <sample datetime="2025-05-03T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.57</price>
+   </sample>
+   <sample datetime="2025-05-03T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.58</price>
+   </sample>
+   <sample datetime="2025-05-03T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.94</price>
+   </sample>
+   <sample datetime="2025-05-04T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.79</price>
+   </sample>
+   <sample datetime="2025-05-04T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.99</price>
+   </sample>
+   <sample datetime="2025-05-04T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>22.62</price>
+   </sample>
+   <sample datetime="2025-05-04T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.5</price>
+   </sample>
+   <sample datetime="2025-05-04T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.03</price>
+   </sample>
+   <sample datetime="2025-05-04T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>2</sunshine>
+      <price>27.26</price>
+   </sample>
+   <sample datetime="2025-05-04T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>13</sunshine>
+      <price>36.04</price>
+   </sample>
+   <sample datetime="2025-05-04T07:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>31.88</price>
+   </sample>
+   <sample datetime="2025-05-04T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>71</sunshine>
+      <price>35.42</price>
+   </sample>
+   <sample datetime="2025-05-04T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>110</sunshine>
+      <price>36.57</price>
+   </sample>
+   <sample datetime="2025-05-04T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>80</sunshine>
+      <price>43.29</price>
+   </sample>
+   <sample datetime="2025-05-04T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>31</sunshine>
+      <price>37.31</price>
+   </sample>
+   <sample datetime="2025-05-04T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>49</sunshine>
+      <price>36.43</price>
+   </sample>
+   <sample datetime="2025-05-04T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>46</sunshine>
+      <price>37.35</price>
+   </sample>
+   <sample datetime="2025-05-04T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>87</sunshine>
+      <price>41.61</price>
+   </sample>
+   <sample datetime="2025-05-04T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>60</sunshine>
+      <price>39.85</price>
+   </sample>
+   <sample datetime="2025-05-04T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>33</sunshine>
+      <price>37.27</price>
+   </sample>
+   <sample datetime="2025-05-04T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>24</sunshine>
+      <price>43.4</price>
+   </sample>
+   <sample datetime="2025-05-04T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.15</price>
+   </sample>
+   <sample datetime="2025-05-04T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>44.77</price>
+   </sample>
+   <sample datetime="2025-05-04T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.75</price>
+   </sample>
+   <sample datetime="2025-05-04T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.2</price>
+   </sample>
+   <sample datetime="2025-05-04T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.08</price>
+   </sample>
+   <sample datetime="2025-05-04T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.93</price>
+   </sample>
+   <sample datetime="2025-05-05T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.45</price>
+   </sample>
+   <sample datetime="2025-05-05T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.38</price>
+   </sample>
+   <sample datetime="2025-05-05T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.87</price>
+   </sample>
+   <sample datetime="2025-05-05T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.39</price>
+   </sample>
+   <sample datetime="2025-05-05T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.03</price>
+   </sample>
+   <sample datetime="2025-05-05T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.02</price>
+   </sample>
+   <sample datetime="2025-05-05T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>3</sunshine>
+      <price>35.17</price>
+   </sample>
+   <sample datetime="2025-05-05T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>4</sunshine>
+      <price>34.26</price>
+   </sample>
+   <sample datetime="2025-05-05T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>35.54</price>
+   </sample>
+   <sample datetime="2025-05-05T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>14</sunshine>
+      <price>36.67</price>
+   </sample>
+   <sample datetime="2025-05-05T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>34</sunshine>
+      <price>44.52</price>
+   </sample>
+   <sample datetime="2025-05-05T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>10</sunshine>
+      <price>39.38</price>
+   </sample>
+   <sample datetime="2025-05-05T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>39.63</price>
+   </sample>
+   <sample datetime="2025-05-05T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>38.64</price>
+   </sample>
+   <sample datetime="2025-05-05T14:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.1</price>
+   </sample>
+   <sample datetime="2025-05-05T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>13</sunshine>
+      <price>38.78</price>
+   </sample>
+   <sample datetime="2025-05-05T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>21</sunshine>
+      <price>39.04</price>
+   </sample>
+   <sample datetime="2025-05-05T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>7</sunshine>
+      <price>49.25</price>
+   </sample>
+   <sample datetime="2025-05-05T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>3</sunshine>
+      <price>41.28</price>
+   </sample>
+   <sample datetime="2025-05-05T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>2</sunshine>
+      <price>42.76</price>
+   </sample>
+   <sample datetime="2025-05-05T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>41.76</price>
+   </sample>
+   <sample datetime="2025-05-05T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.52</price>
+   </sample>
+   <sample datetime="2025-05-05T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.15</price>
+   </sample>
+   <sample datetime="2025-05-05T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.36</price>
+   </sample>
+   <sample datetime="2025-05-06T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.44</price>
+   </sample>
+   <sample datetime="2025-05-06T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.04</price>
+   </sample>
+   <sample datetime="2025-05-06T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.67</price>
+   </sample>
+   <sample datetime="2025-05-06T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.06</price>
+   </sample>
+   <sample datetime="2025-05-06T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.03</price>
+   </sample>
+   <sample datetime="2025-05-06T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>4</sunshine>
+      <price>32.24</price>
+   </sample>
+   <sample datetime="2025-05-06T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>25</sunshine>
+      <price>33.88</price>
+   </sample>
+   <sample datetime="2025-05-06T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>114</sunshine>
+      <price>34.73</price>
+   </sample>
+   <sample datetime="2025-05-06T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>101</sunshine>
+      <price>36.06</price>
+   </sample>
+   <sample datetime="2025-05-06T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>60</sunshine>
+      <price>34.85</price>
+   </sample>
+   <sample datetime="2025-05-06T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>127</sunshine>
+      <price>34.21</price>
+   </sample>
+   <sample datetime="2025-05-06T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>63</sunshine>
+      <price>39.07</price>
+   </sample>
+   <sample datetime="2025-05-06T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>166</sunshine>
+      <price>35.67</price>
+   </sample>
+   <sample datetime="2025-05-06T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>26</sunshine>
+      <price>40.28</price>
+   </sample>
+   <sample datetime="2025-05-06T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>108</sunshine>
+      <price>36.1</price>
+   </sample>
+   <sample datetime="2025-05-06T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>27</sunshine>
+      <price>43.51</price>
+   </sample>
+   <sample datetime="2025-05-06T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>87</sunshine>
+      <price>36.51</price>
+   </sample>
+   <sample datetime="2025-05-06T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>92</sunshine>
+      <price>40.89</price>
+   </sample>
+   <sample datetime="2025-05-06T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>16</sunshine>
+      <price>44.3</price>
+   </sample>
+   <sample datetime="2025-05-06T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>2</sunshine>
+      <price>38.17</price>
+   </sample>
+   <sample datetime="2025-05-06T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.54</price>
+   </sample>
+   <sample datetime="2025-05-06T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.47</price>
+   </sample>
+   <sample datetime="2025-05-06T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.65</price>
+   </sample>
+   <sample datetime="2025-05-06T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.23</price>
+   </sample>
+   <sample datetime="2025-05-07T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.38</price>
+   </sample>
+   <sample datetime="2025-05-07T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.42</price>
+   </sample>
+   <sample datetime="2025-05-07T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.39</price>
+   </sample>
+   <sample datetime="2025-05-07T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.22</price>
+   </sample>
+   <sample datetime="2025-05-07T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.9</price>
+   </sample>
+   <sample datetime="2025-05-07T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>10</sunshine>
+      <price>28.45</price>
+   </sample>
+   <sample datetime="2025-05-07T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>74</sunshine>
+      <price>36.36</price>
+   </sample>
+   <sample datetime="2025-05-07T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>198</sunshine>
+      <price>36.55</price>
+   </sample>
+   <sample datetime="2025-05-07T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>328</sunshine>
+      <price>34.5</price>
+   </sample>
+   <sample datetime="2025-05-07T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>451</sunshine>
+      <price>36.32</price>
+   </sample>
+   <sample datetime="2025-05-07T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>365</sunshine>
+      <price>39.74</price>
+   </sample>
+   <sample datetime="2025-05-07T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>405</sunshine>
+      <price>36.72</price>
+   </sample>
+   <sample datetime="2025-05-07T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>170</sunshine>
+      <price>44.46</price>
+   </sample>
+   <sample datetime="2025-05-07T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>138</sunshine>
+      <price>40.28</price>
+   </sample>
+   <sample datetime="2025-05-07T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>98</sunshine>
+      <price>35.29</price>
+   </sample>
+   <sample datetime="2025-05-07T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>72</sunshine>
+      <price>40.83</price>
+   </sample>
+   <sample datetime="2025-05-07T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>35.94</price>
+   </sample>
+   <sample datetime="2025-05-07T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>31</sunshine>
+      <price>44.22</price>
+   </sample>
+   <sample datetime="2025-05-07T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>14</sunshine>
+      <price>45.34</price>
+   </sample>
+   <sample datetime="2025-05-07T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>39.4</price>
+   </sample>
+   <sample datetime="2025-05-07T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>44.75</price>
+   </sample>
+   <sample datetime="2025-05-07T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.69</price>
+   </sample>
+   <sample datetime="2025-05-07T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.5</price>
+   </sample>
+   <sample datetime="2025-05-07T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.65</price>
+   </sample>
+   <sample datetime="2025-05-08T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.37</price>
+   </sample>
+   <sample datetime="2025-05-08T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.35</price>
+   </sample>
+   <sample datetime="2025-05-08T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.08</price>
+   </sample>
+   <sample datetime="2025-05-08T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.23</price>
+   </sample>
+   <sample datetime="2025-05-08T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.71</price>
+   </sample>
+   <sample datetime="2025-05-08T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>28.54</price>
+   </sample>
+   <sample datetime="2025-05-08T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>80</sunshine>
+      <price>36.41</price>
+   </sample>
+   <sample datetime="2025-05-08T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>119</sunshine>
+      <price>37.51</price>
+   </sample>
+   <sample datetime="2025-05-08T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>250</sunshine>
+      <price>35.89</price>
+   </sample>
+   <sample datetime="2025-05-08T09:00:00" cluster="2" recommendation="SELL">
+      <sunshine>297</sunshine>
+      <price>38.77</price>
+   </sample>
+   <sample datetime="2025-05-08T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>292</sunshine>
+      <price>38.07</price>
+   </sample>
+   <sample datetime="2025-05-08T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>477</sunshine>
+      <price>47.02</price>
+   </sample>
+   <sample datetime="2025-05-08T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>526</sunshine>
+      <price>40.74</price>
+   </sample>
+   <sample datetime="2025-05-08T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>446</sunshine>
+      <price>36.29</price>
+   </sample>
+   <sample datetime="2025-05-08T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>321</sunshine>
+      <price>35.65</price>
+   </sample>
+   <sample datetime="2025-05-08T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>213</sunshine>
+      <price>40.31</price>
+   </sample>
+   <sample datetime="2025-05-08T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>103</sunshine>
+      <price>38.19</price>
+   </sample>
+   <sample datetime="2025-05-08T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>51</sunshine>
+      <price>44</price>
+   </sample>
+   <sample datetime="2025-05-08T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>41</sunshine>
+      <price>43.28</price>
+   </sample>
+   <sample datetime="2025-05-08T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>7</sunshine>
+      <price>41.64</price>
+   </sample>
+   <sample datetime="2025-05-08T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.32</price>
+   </sample>
+   <sample datetime="2025-05-08T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.83</price>
+   </sample>
+   <sample datetime="2025-05-08T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.97</price>
+   </sample>
+   <sample datetime="2025-05-08T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.57</price>
+   </sample>
+   <sample datetime="2025-05-09T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.29</price>
+   </sample>
+   <sample datetime="2025-05-09T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.37</price>
+   </sample>
+   <sample datetime="2025-05-09T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.21</price>
+   </sample>
+   <sample datetime="2025-05-09T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.63</price>
+   </sample>
+   <sample datetime="2025-05-09T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.09</price>
+   </sample>
+   <sample datetime="2025-05-09T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>15</sunshine>
+      <price>28.17</price>
+   </sample>
+   <sample datetime="2025-05-09T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>99</sunshine>
+      <price>35.98</price>
+   </sample>
+   <sample datetime="2025-05-09T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>148</sunshine>
+      <price>33.57</price>
+   </sample>
+   <sample datetime="2025-05-09T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>222</sunshine>
+      <price>36.58</price>
+   </sample>
+   <sample datetime="2025-05-09T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>330</sunshine>
+      <price>36.98</price>
+   </sample>
+   <sample datetime="2025-05-09T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>308</sunshine>
+      <price>42.11</price>
+   </sample>
+   <sample datetime="2025-05-09T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>219</sunshine>
+      <price>42.02</price>
+   </sample>
+   <sample datetime="2025-05-09T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>160</sunshine>
+      <price>34.73</price>
+   </sample>
+   <sample datetime="2025-05-09T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>130</sunshine>
+      <price>36.05</price>
+   </sample>
+   <sample datetime="2025-05-09T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>69</sunshine>
+      <price>40.41</price>
+   </sample>
+   <sample datetime="2025-05-09T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>24</sunshine>
+      <price>40.4</price>
+   </sample>
+   <sample datetime="2025-05-09T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>82</sunshine>
+      <price>40.41</price>
+   </sample>
+   <sample datetime="2025-05-09T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>76</sunshine>
+      <price>53.42</price>
+   </sample>
+   <sample datetime="2025-05-09T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>44</sunshine>
+      <price>43.57</price>
+   </sample>
+   <sample datetime="2025-05-09T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>45.27</price>
+   </sample>
+   <sample datetime="2025-05-09T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>44.72</price>
+   </sample>
+   <sample datetime="2025-05-09T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.16</price>
+   </sample>
+   <sample datetime="2025-05-09T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.23</price>
+   </sample>
+   <sample datetime="2025-05-09T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.38</price>
+   </sample>
+   <sample datetime="2025-05-10T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.31</price>
+   </sample>
+   <sample datetime="2025-05-10T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.39</price>
+   </sample>
+   <sample datetime="2025-05-10T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.89</price>
+   </sample>
+   <sample datetime="2025-05-10T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.02</price>
+   </sample>
+   <sample datetime="2025-05-10T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.49</price>
+   </sample>
+   <sample datetime="2025-05-10T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>19</sunshine>
+      <price>24.13</price>
+   </sample>
+   <sample datetime="2025-05-10T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>115</sunshine>
+      <price>37.23</price>
+   </sample>
+   <sample datetime="2025-05-10T07:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>263</sunshine>
+      <price>32.63</price>
+   </sample>
+   <sample datetime="2025-05-10T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>420</sunshine>
+      <price>34.92</price>
+   </sample>
+   <sample datetime="2025-05-10T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>556</sunshine>
+      <price>38.04</price>
+   </sample>
+   <sample datetime="2025-05-10T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>669</sunshine>
+      <price>39.05</price>
+   </sample>
+   <sample datetime="2025-05-10T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>704</sunshine>
+      <price>35.63</price>
+   </sample>
+   <sample datetime="2025-05-10T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>722</sunshine>
+      <price>36.71</price>
+   </sample>
+   <sample datetime="2025-05-10T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>539</sunshine>
+      <price>40.9</price>
+   </sample>
+   <sample datetime="2025-05-10T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>584</sunshine>
+      <price>36.67</price>
+   </sample>
+   <sample datetime="2025-05-10T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>372</sunshine>
+      <price>39.51</price>
+   </sample>
+   <sample datetime="2025-05-10T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>290</sunshine>
+      <price>39</price>
+   </sample>
+   <sample datetime="2025-05-10T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>165</sunshine>
+      <price>39.91</price>
+   </sample>
+   <sample datetime="2025-05-10T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>80</sunshine>
+      <price>48.29</price>
+   </sample>
+   <sample datetime="2025-05-10T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>11</sunshine>
+      <price>43.76</price>
+   </sample>
+   <sample datetime="2025-05-10T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.78</price>
+   </sample>
+   <sample datetime="2025-05-10T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.23</price>
+   </sample>
+   <sample datetime="2025-05-10T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.54</price>
+   </sample>
+   <sample datetime="2025-05-10T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.56</price>
+   </sample>
+   <sample datetime="2025-05-11T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.27</price>
+   </sample>
+   <sample datetime="2025-05-11T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.63</price>
+   </sample>
+   <sample datetime="2025-05-11T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.87</price>
+   </sample>
+   <sample datetime="2025-05-11T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.59</price>
+   </sample>
+   <sample datetime="2025-05-11T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.46</price>
+   </sample>
+   <sample datetime="2025-05-11T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>19</sunshine>
+      <price>27.19</price>
+   </sample>
+   <sample datetime="2025-05-11T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>109</sunshine>
+      <price>34.91</price>
+   </sample>
+   <sample datetime="2025-05-11T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>263</sunshine>
+      <price>34.55</price>
+   </sample>
+   <sample datetime="2025-05-11T08:00:00" cluster="2" recommendation="SELL">
+      <sunshine>392</sunshine>
+      <price>39.39</price>
+   </sample>
+   <sample datetime="2025-05-11T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>458</sunshine>
+      <price>36.67</price>
+   </sample>
+   <sample datetime="2025-05-11T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>586</sunshine>
+      <price>35.08</price>
+   </sample>
+   <sample datetime="2025-05-11T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>737</sunshine>
+      <price>41.61</price>
+   </sample>
+   <sample datetime="2025-05-11T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>766</sunshine>
+      <price>45.23</price>
+   </sample>
+   <sample datetime="2025-05-11T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>741</sunshine>
+      <price>41.96</price>
+   </sample>
+   <sample datetime="2025-05-11T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>679</sunshine>
+      <price>34.3</price>
+   </sample>
+   <sample datetime="2025-05-11T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>567</sunshine>
+      <price>37.41</price>
+   </sample>
+   <sample datetime="2025-05-11T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>418</sunshine>
+      <price>42.66</price>
+   </sample>
+   <sample datetime="2025-05-11T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>254</sunshine>
+      <price>39.74</price>
+   </sample>
+   <sample datetime="2025-05-11T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>103</sunshine>
+      <price>43.19</price>
+   </sample>
+   <sample datetime="2025-05-11T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>14</sunshine>
+      <price>44.18</price>
+   </sample>
+   <sample datetime="2025-05-11T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.08</price>
+   </sample>
+   <sample datetime="2025-05-11T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.74</price>
+   </sample>
+   <sample datetime="2025-05-11T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.38</price>
+   </sample>
+   <sample datetime="2025-05-11T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.81</price>
+   </sample>
+   <sample datetime="2025-05-12T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.35</price>
+   </sample>
+   <sample datetime="2025-05-12T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.36</price>
+   </sample>
+   <sample datetime="2025-05-12T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.12</price>
+   </sample>
+   <sample datetime="2025-05-12T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25</price>
+   </sample>
+   <sample datetime="2025-05-12T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.98</price>
+   </sample>
+   <sample datetime="2025-05-12T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>14</sunshine>
+      <price>28.12</price>
+   </sample>
+   <sample datetime="2025-05-12T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>56</sunshine>
+      <price>38.74</price>
+   </sample>
+   <sample datetime="2025-05-12T07:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>27</sunshine>
+      <price>32.99</price>
+   </sample>
+   <sample datetime="2025-05-12T08:00:00" cluster="2" recommendation="SELL">
+      <sunshine>205</sunshine>
+      <price>38.19</price>
+   </sample>
+   <sample datetime="2025-05-12T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>245</sunshine>
+      <price>35.88</price>
+   </sample>
+   <sample datetime="2025-05-12T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>373</sunshine>
+      <price>35.92</price>
+   </sample>
+   <sample datetime="2025-05-12T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>282</sunshine>
+      <price>40.25</price>
+   </sample>
+   <sample datetime="2025-05-12T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>222</sunshine>
+      <price>39.46</price>
+   </sample>
+   <sample datetime="2025-05-12T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>113</sunshine>
+      <price>37.06</price>
+   </sample>
+   <sample datetime="2025-05-12T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>97</sunshine>
+      <price>39.07</price>
+   </sample>
+   <sample datetime="2025-05-12T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>45</sunshine>
+      <price>37.7</price>
+   </sample>
+   <sample datetime="2025-05-12T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>24</sunshine>
+      <price>39.2</price>
+   </sample>
+   <sample datetime="2025-05-12T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>43.85</price>
+   </sample>
+   <sample datetime="2025-05-12T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>5</sunshine>
+      <price>46.62</price>
+   </sample>
+   <sample datetime="2025-05-12T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>38.15</price>
+   </sample>
+   <sample datetime="2025-05-12T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>48.26</price>
+   </sample>
+   <sample datetime="2025-05-12T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.96</price>
+   </sample>
+   <sample datetime="2025-05-12T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.56</price>
+   </sample>
+   <sample datetime="2025-05-12T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.04</price>
+   </sample>
+   <sample datetime="2025-05-13T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.42</price>
+   </sample>
+   <sample datetime="2025-05-13T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.61</price>
+   </sample>
+   <sample datetime="2025-05-13T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.44</price>
+   </sample>
+   <sample datetime="2025-05-13T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.87</price>
+   </sample>
+   <sample datetime="2025-05-13T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.68</price>
+   </sample>
+   <sample datetime="2025-05-13T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>9</sunshine>
+      <price>29.56</price>
+   </sample>
+   <sample datetime="2025-05-13T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>60</sunshine>
+      <price>36.57</price>
+   </sample>
+   <sample datetime="2025-05-13T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>68</sunshine>
+      <price>34.47</price>
+   </sample>
+   <sample datetime="2025-05-13T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>169</sunshine>
+      <price>37.66</price>
+   </sample>
+   <sample datetime="2025-05-13T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>329</sunshine>
+      <price>36.47</price>
+   </sample>
+   <sample datetime="2025-05-13T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>336</sunshine>
+      <price>41.3</price>
+   </sample>
+   <sample datetime="2025-05-13T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>380</sunshine>
+      <price>40.75</price>
+   </sample>
+   <sample datetime="2025-05-13T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>458</sunshine>
+      <price>36.37</price>
+   </sample>
+   <sample datetime="2025-05-13T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>302</sunshine>
+      <price>37.18</price>
+   </sample>
+   <sample datetime="2025-05-13T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>184</sunshine>
+      <price>41.1</price>
+   </sample>
+   <sample datetime="2025-05-13T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>268</sunshine>
+      <price>40.69</price>
+   </sample>
+   <sample datetime="2025-05-13T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>191</sunshine>
+      <price>38.8</price>
+   </sample>
+   <sample datetime="2025-05-13T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>124</sunshine>
+      <price>42.21</price>
+   </sample>
+   <sample datetime="2025-05-13T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>36</sunshine>
+      <price>45.69</price>
+   </sample>
+   <sample datetime="2025-05-13T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>7</sunshine>
+      <price>40.09</price>
+   </sample>
+   <sample datetime="2025-05-13T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>43.5</price>
+   </sample>
+   <sample datetime="2025-05-13T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.46</price>
+   </sample>
+   <sample datetime="2025-05-13T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.42</price>
+   </sample>
+   <sample datetime="2025-05-13T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.06</price>
+   </sample>
+   <sample datetime="2025-05-14T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.51</price>
+   </sample>
+   <sample datetime="2025-05-14T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.49</price>
+   </sample>
+   <sample datetime="2025-05-14T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.47</price>
+   </sample>
+   <sample datetime="2025-05-14T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.9</price>
+   </sample>
+   <sample datetime="2025-05-14T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.22</price>
+   </sample>
+   <sample datetime="2025-05-14T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>23</sunshine>
+      <price>27.24</price>
+   </sample>
+   <sample datetime="2025-05-14T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>115</sunshine>
+      <price>36.51</price>
+   </sample>
+   <sample datetime="2025-05-14T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>266</sunshine>
+      <price>35.6</price>
+   </sample>
+   <sample datetime="2025-05-14T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>415</sunshine>
+      <price>36.05</price>
+   </sample>
+   <sample datetime="2025-05-14T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>563</sunshine>
+      <price>37.05</price>
+   </sample>
+   <sample datetime="2025-05-14T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>620</sunshine>
+      <price>36.41</price>
+   </sample>
+   <sample datetime="2025-05-14T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>596</sunshine>
+      <price>45.14</price>
+   </sample>
+   <sample datetime="2025-05-14T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>723</sunshine>
+      <price>35.84</price>
+   </sample>
+   <sample datetime="2025-05-14T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>632</sunshine>
+      <price>35.22</price>
+   </sample>
+   <sample datetime="2025-05-14T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>515</sunshine>
+      <price>42.33</price>
+   </sample>
+   <sample datetime="2025-05-14T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>407</sunshine>
+      <price>41.23</price>
+   </sample>
+   <sample datetime="2025-05-14T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>315</sunshine>
+      <price>40.73</price>
+   </sample>
+   <sample datetime="2025-05-14T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>173</sunshine>
+      <price>43.75</price>
+   </sample>
+   <sample datetime="2025-05-14T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>98</sunshine>
+      <price>41.82</price>
+   </sample>
+   <sample datetime="2025-05-14T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>17</sunshine>
+      <price>39.17</price>
+   </sample>
+   <sample datetime="2025-05-14T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.09</price>
+   </sample>
+   <sample datetime="2025-05-14T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.51</price>
+   </sample>
+   <sample datetime="2025-05-14T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.81</price>
+   </sample>
+   <sample datetime="2025-05-14T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.57</price>
+   </sample>
+   <sample datetime="2025-05-15T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.21</price>
+   </sample>
+   <sample datetime="2025-05-15T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.22</price>
+   </sample>
+   <sample datetime="2025-05-15T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.69</price>
+   </sample>
+   <sample datetime="2025-05-15T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.73</price>
+   </sample>
+   <sample datetime="2025-05-15T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.22</price>
+   </sample>
+   <sample datetime="2025-05-15T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>20</sunshine>
+      <price>28.35</price>
+   </sample>
+   <sample datetime="2025-05-15T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>110</sunshine>
+      <price>36.35</price>
+   </sample>
+   <sample datetime="2025-05-15T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>247</sunshine>
+      <price>34.85</price>
+   </sample>
+   <sample datetime="2025-05-15T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>330</sunshine>
+      <price>34.92</price>
+   </sample>
+   <sample datetime="2025-05-15T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>387</sunshine>
+      <price>36.32</price>
+   </sample>
+   <sample datetime="2025-05-15T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>495</sunshine>
+      <price>34.52</price>
+   </sample>
+   <sample datetime="2025-05-15T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>590</sunshine>
+      <price>34.64</price>
+   </sample>
+   <sample datetime="2025-05-15T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>689</sunshine>
+      <price>36.7</price>
+   </sample>
+   <sample datetime="2025-05-15T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>603</sunshine>
+      <price>38.22</price>
+   </sample>
+   <sample datetime="2025-05-15T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>654</sunshine>
+      <price>39.79</price>
+   </sample>
+   <sample datetime="2025-05-15T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>429</sunshine>
+      <price>43.29</price>
+   </sample>
+   <sample datetime="2025-05-15T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>226</sunshine>
+      <price>41.43</price>
+   </sample>
+   <sample datetime="2025-05-15T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>163</sunshine>
+      <price>41.38</price>
+   </sample>
+   <sample datetime="2025-05-15T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>80</sunshine>
+      <price>41.8</price>
+   </sample>
+   <sample datetime="2025-05-15T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>11</sunshine>
+      <price>38.85</price>
+   </sample>
+   <sample datetime="2025-05-15T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>41.8</price>
+   </sample>
+   <sample datetime="2025-05-15T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.28</price>
+   </sample>
+   <sample datetime="2025-05-15T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.51</price>
+   </sample>
+   <sample datetime="2025-05-15T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.21</price>
+   </sample>
+   <sample datetime="2025-05-16T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.9</price>
+   </sample>
+   <sample datetime="2025-05-16T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.93</price>
+   </sample>
+   <sample datetime="2025-05-16T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.64</price>
+   </sample>
+   <sample datetime="2025-05-16T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.66</price>
+   </sample>
+   <sample datetime="2025-05-16T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.24</price>
+   </sample>
+   <sample datetime="2025-05-16T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>27</sunshine>
+      <price>27.06</price>
+   </sample>
+   <sample datetime="2025-05-16T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>135</sunshine>
+      <price>36.31</price>
+   </sample>
+   <sample datetime="2025-05-16T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>286</sunshine>
+      <price>35.89</price>
+   </sample>
+   <sample datetime="2025-05-16T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>440</sunshine>
+      <price>36.06</price>
+   </sample>
+   <sample datetime="2025-05-16T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>581</sunshine>
+      <price>34.31</price>
+   </sample>
+   <sample datetime="2025-05-16T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>691</sunshine>
+      <price>38.93</price>
+   </sample>
+   <sample datetime="2025-05-16T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>618</sunshine>
+      <price>40.35</price>
+   </sample>
+   <sample datetime="2025-05-16T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>529</sunshine>
+      <price>43.21</price>
+   </sample>
+   <sample datetime="2025-05-16T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>294</sunshine>
+      <price>41.74</price>
+   </sample>
+   <sample datetime="2025-05-16T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>199</sunshine>
+      <price>45.32</price>
+   </sample>
+   <sample datetime="2025-05-16T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>119</sunshine>
+      <price>36.56</price>
+   </sample>
+   <sample datetime="2025-05-16T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>167</sunshine>
+      <price>41.48</price>
+   </sample>
+   <sample datetime="2025-05-16T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>153</sunshine>
+      <price>42.41</price>
+   </sample>
+   <sample datetime="2025-05-16T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>71</sunshine>
+      <price>48.43</price>
+   </sample>
+   <sample datetime="2025-05-16T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>13</sunshine>
+      <price>39.44</price>
+   </sample>
+   <sample datetime="2025-05-16T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.34</price>
+   </sample>
+   <sample datetime="2025-05-16T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.66</price>
+   </sample>
+   <sample datetime="2025-05-16T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.61</price>
+   </sample>
+   <sample datetime="2025-05-16T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.81</price>
+   </sample>
+   <sample datetime="2025-05-17T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.34</price>
+   </sample>
+   <sample datetime="2025-05-17T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.16</price>
+   </sample>
+   <sample datetime="2025-05-17T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.54</price>
+   </sample>
+   <sample datetime="2025-05-17T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.61</price>
+   </sample>
+   <sample datetime="2025-05-17T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.76</price>
+   </sample>
+   <sample datetime="2025-05-17T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>23</sunshine>
+      <price>26.71</price>
+   </sample>
+   <sample datetime="2025-05-17T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>124</sunshine>
+      <price>34.06</price>
+   </sample>
+   <sample datetime="2025-05-17T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>173</sunshine>
+      <price>36.84</price>
+   </sample>
+   <sample datetime="2025-05-17T08:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>408</sunshine>
+      <price>33.22</price>
+   </sample>
+   <sample datetime="2025-05-17T09:00:00" cluster="2" recommendation="SELL">
+      <sunshine>516</sunshine>
+      <price>39.52</price>
+   </sample>
+   <sample datetime="2025-05-17T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>447</sunshine>
+      <price>42.4</price>
+   </sample>
+   <sample datetime="2025-05-17T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>478</sunshine>
+      <price>37.45</price>
+   </sample>
+   <sample datetime="2025-05-17T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>506</sunshine>
+      <price>33.72</price>
+   </sample>
+   <sample datetime="2025-05-17T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>368</sunshine>
+      <price>42.92</price>
+   </sample>
+   <sample datetime="2025-05-17T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>196</sunshine>
+      <price>38.52</price>
+   </sample>
+   <sample datetime="2025-05-17T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>171</sunshine>
+      <price>42.57</price>
+   </sample>
+   <sample datetime="2025-05-17T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>111</sunshine>
+      <price>34.08</price>
+   </sample>
+   <sample datetime="2025-05-17T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>130</sunshine>
+      <price>40.06</price>
+   </sample>
+   <sample datetime="2025-05-17T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>53</sunshine>
+      <price>41.88</price>
+   </sample>
+   <sample datetime="2025-05-17T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>42</price>
+   </sample>
+   <sample datetime="2025-05-17T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>40.51</price>
+   </sample>
+   <sample datetime="2025-05-17T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.11</price>
+   </sample>
+   <sample datetime="2025-05-17T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.72</price>
+   </sample>
+   <sample datetime="2025-05-17T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.58</price>
+   </sample>
+   <sample datetime="2025-05-18T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.1</price>
+   </sample>
+   <sample datetime="2025-05-18T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.89</price>
+   </sample>
+   <sample datetime="2025-05-18T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.28</price>
+   </sample>
+   <sample datetime="2025-05-18T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.61</price>
+   </sample>
+   <sample datetime="2025-05-18T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>24.79</price>
+   </sample>
+   <sample datetime="2025-05-18T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>18</sunshine>
+      <price>30.42</price>
+   </sample>
+   <sample datetime="2025-05-18T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>86</sunshine>
+      <price>36.52</price>
+   </sample>
+   <sample datetime="2025-05-18T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>245</sunshine>
+      <price>34.36</price>
+   </sample>
+   <sample datetime="2025-05-18T08:00:00" cluster="2" recommendation="SELL">
+      <sunshine>342</sunshine>
+      <price>38.96</price>
+   </sample>
+   <sample datetime="2025-05-18T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>433</sunshine>
+      <price>36.09</price>
+   </sample>
+   <sample datetime="2025-05-18T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>550</sunshine>
+      <price>42.4</price>
+   </sample>
+   <sample datetime="2025-05-18T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>413</sunshine>
+      <price>39.06</price>
+   </sample>
+   <sample datetime="2025-05-18T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>187</sunshine>
+      <price>45.04</price>
+   </sample>
+   <sample datetime="2025-05-18T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>266</sunshine>
+      <price>44.13</price>
+   </sample>
+   <sample datetime="2025-05-18T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>372</sunshine>
+      <price>38.11</price>
+   </sample>
+   <sample datetime="2025-05-18T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>262</sunshine>
+      <price>41.77</price>
+   </sample>
+   <sample datetime="2025-05-18T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>172</sunshine>
+      <price>40.8</price>
+   </sample>
+   <sample datetime="2025-05-18T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>118</sunshine>
+      <price>45.97</price>
+   </sample>
+   <sample datetime="2025-05-18T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>81</sunshine>
+      <price>38.97</price>
+   </sample>
+   <sample datetime="2025-05-18T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>17</sunshine>
+      <price>43.92</price>
+   </sample>
+   <sample datetime="2025-05-18T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>45.04</price>
+   </sample>
+   <sample datetime="2025-05-18T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.34</price>
+   </sample>
+   <sample datetime="2025-05-18T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.49</price>
+   </sample>
+   <sample datetime="2025-05-18T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.78</price>
+   </sample>
+   <sample datetime="2025-05-19T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.32</price>
+   </sample>
+   <sample datetime="2025-05-19T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.3</price>
+   </sample>
+   <sample datetime="2025-05-19T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.86</price>
+   </sample>
+   <sample datetime="2025-05-19T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.01</price>
+   </sample>
+   <sample datetime="2025-05-19T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.12</price>
+   </sample>
+   <sample datetime="2025-05-19T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>27</sunshine>
+      <price>25.1</price>
+   </sample>
+   <sample datetime="2025-05-19T06:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>128</sunshine>
+      <price>32.45</price>
+   </sample>
+   <sample datetime="2025-05-19T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>278</sunshine>
+      <price>35.75</price>
+   </sample>
+   <sample datetime="2025-05-19T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>414</sunshine>
+      <price>36.63</price>
+   </sample>
+   <sample datetime="2025-05-19T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>553</sunshine>
+      <price>35.79</price>
+   </sample>
+   <sample datetime="2025-05-19T10:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>670</sunshine>
+      <price>32.66</price>
+   </sample>
+   <sample datetime="2025-05-19T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>733</sunshine>
+      <price>38.59</price>
+   </sample>
+   <sample datetime="2025-05-19T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>733</sunshine>
+      <price>34.95</price>
+   </sample>
+   <sample datetime="2025-05-19T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>676</sunshine>
+      <price>40.87</price>
+   </sample>
+   <sample datetime="2025-05-19T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>609</sunshine>
+      <price>39.96</price>
+   </sample>
+   <sample datetime="2025-05-19T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>389</sunshine>
+      <price>36.04</price>
+   </sample>
+   <sample datetime="2025-05-19T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>214</sunshine>
+      <price>37.32</price>
+   </sample>
+   <sample datetime="2025-05-19T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>124</sunshine>
+      <price>38.68</price>
+   </sample>
+   <sample datetime="2025-05-19T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>41</sunshine>
+      <price>41.67</price>
+   </sample>
+   <sample datetime="2025-05-19T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>5</sunshine>
+      <price>44.73</price>
+   </sample>
+   <sample datetime="2025-05-19T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>38.9</price>
+   </sample>
+   <sample datetime="2025-05-19T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.87</price>
+   </sample>
+   <sample datetime="2025-05-19T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.8</price>
+   </sample>
+   <sample datetime="2025-05-19T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.27</price>
+   </sample>
+   <sample datetime="2025-05-20T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.65</price>
+   </sample>
+   <sample datetime="2025-05-20T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.79</price>
+   </sample>
+   <sample datetime="2025-05-20T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.75</price>
+   </sample>
+   <sample datetime="2025-05-20T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.46</price>
+   </sample>
+   <sample datetime="2025-05-20T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.79</price>
+   </sample>
+   <sample datetime="2025-05-20T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>27.93</price>
+   </sample>
+   <sample datetime="2025-05-20T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>10</sunshine>
+      <price>34.46</price>
+   </sample>
+   <sample datetime="2025-05-20T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>95</sunshine>
+      <price>36.29</price>
+   </sample>
+   <sample datetime="2025-05-20T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>167</sunshine>
+      <price>35.64</price>
+   </sample>
+   <sample datetime="2025-05-20T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>121</sunshine>
+      <price>35.42</price>
+   </sample>
+   <sample datetime="2025-05-20T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>133</sunshine>
+      <price>40.7</price>
+   </sample>
+   <sample datetime="2025-05-20T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>73</sunshine>
+      <price>41.13</price>
+   </sample>
+   <sample datetime="2025-05-20T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>177</sunshine>
+      <price>37.27</price>
+   </sample>
+   <sample datetime="2025-05-20T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>202</sunshine>
+      <price>37.13</price>
+   </sample>
+   <sample datetime="2025-05-20T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>173</sunshine>
+      <price>38.03</price>
+   </sample>
+   <sample datetime="2025-05-20T15:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>73</sunshine>
+      <price>31.95</price>
+   </sample>
+   <sample datetime="2025-05-20T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>47</sunshine>
+      <price>34.31</price>
+   </sample>
+   <sample datetime="2025-05-20T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>32</sunshine>
+      <price>45.96</price>
+   </sample>
+   <sample datetime="2025-05-20T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>3</sunshine>
+      <price>46.79</price>
+   </sample>
+   <sample datetime="2025-05-20T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>5</sunshine>
+      <price>41.11</price>
+   </sample>
+   <sample datetime="2025-05-20T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>43.59</price>
+   </sample>
+   <sample datetime="2025-05-20T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.48</price>
+   </sample>
+   <sample datetime="2025-05-20T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>40.02</price>
+   </sample>
+   <sample datetime="2025-05-20T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.1</price>
+   </sample>
+   <sample datetime="2025-05-21T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.6</price>
+   </sample>
+   <sample datetime="2025-05-21T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.95</price>
+   </sample>
+   <sample datetime="2025-05-21T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>24.65</price>
+   </sample>
+   <sample datetime="2025-05-21T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.27</price>
+   </sample>
+   <sample datetime="2025-05-21T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.35</price>
+   </sample>
+   <sample datetime="2025-05-21T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>25.02</price>
+   </sample>
+   <sample datetime="2025-05-21T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>34.57</price>
+   </sample>
+   <sample datetime="2025-05-21T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>23</sunshine>
+      <price>33.7</price>
+   </sample>
+   <sample datetime="2025-05-21T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>40</sunshine>
+      <price>39.23</price>
+   </sample>
+   <sample datetime="2025-05-21T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>114</sunshine>
+      <price>37.62</price>
+   </sample>
+   <sample datetime="2025-05-21T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>235</sunshine>
+      <price>38.84</price>
+   </sample>
+   <sample datetime="2025-05-21T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>417</sunshine>
+      <price>43.3</price>
+   </sample>
+   <sample datetime="2025-05-21T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>431</sunshine>
+      <price>39.09</price>
+   </sample>
+   <sample datetime="2025-05-21T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>332</sunshine>
+      <price>36.28</price>
+   </sample>
+   <sample datetime="2025-05-21T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>275</sunshine>
+      <price>43.43</price>
+   </sample>
+   <sample datetime="2025-05-21T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>92</sunshine>
+      <price>40.48</price>
+   </sample>
+   <sample datetime="2025-05-21T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>29</sunshine>
+      <price>35.75</price>
+   </sample>
+   <sample datetime="2025-05-21T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>41.29</price>
+   </sample>
+   <sample datetime="2025-05-21T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.23</price>
+   </sample>
+   <sample datetime="2025-05-21T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.71</price>
+   </sample>
+   <sample datetime="2025-05-21T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>44.64</price>
+   </sample>
+   <sample datetime="2025-05-21T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.68</price>
+   </sample>
+   <sample datetime="2025-05-21T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.06</price>
+   </sample>
+   <sample datetime="2025-05-21T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.99</price>
+   </sample>
+   <sample datetime="2025-05-22T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.56</price>
+   </sample>
+   <sample datetime="2025-05-22T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.89</price>
+   </sample>
+   <sample datetime="2025-05-22T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.68</price>
+   </sample>
+   <sample datetime="2025-05-22T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.13</price>
+   </sample>
+   <sample datetime="2025-05-22T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.96</price>
+   </sample>
+   <sample datetime="2025-05-22T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.2</price>
+   </sample>
+   <sample datetime="2025-05-22T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.4</price>
+   </sample>
+   <sample datetime="2025-05-22T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>35.76</price>
+   </sample>
+   <sample datetime="2025-05-22T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>21</sunshine>
+      <price>35.38</price>
+   </sample>
+   <sample datetime="2025-05-22T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>64</sunshine>
+      <price>34.04</price>
+   </sample>
+   <sample datetime="2025-05-22T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>117</sunshine>
+      <price>37.13</price>
+   </sample>
+   <sample datetime="2025-05-22T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>136</sunshine>
+      <price>41.13</price>
+   </sample>
+   <sample datetime="2025-05-22T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>295</sunshine>
+      <price>40.36</price>
+   </sample>
+   <sample datetime="2025-05-22T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>243</sunshine>
+      <price>35.93</price>
+   </sample>
+   <sample datetime="2025-05-22T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>274</sunshine>
+      <price>39.16</price>
+   </sample>
+   <sample datetime="2025-05-22T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>342</sunshine>
+      <price>41.11</price>
+   </sample>
+   <sample datetime="2025-05-22T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>245</sunshine>
+      <price>33.85</price>
+   </sample>
+   <sample datetime="2025-05-22T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>141</sunshine>
+      <price>43.49</price>
+   </sample>
+   <sample datetime="2025-05-22T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>48</sunshine>
+      <price>39.87</price>
+   </sample>
+   <sample datetime="2025-05-22T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>19</sunshine>
+      <price>43.57</price>
+   </sample>
+   <sample datetime="2025-05-22T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.57</price>
+   </sample>
+   <sample datetime="2025-05-22T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.25</price>
+   </sample>
+   <sample datetime="2025-05-22T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.6</price>
+   </sample>
+   <sample datetime="2025-05-22T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.96</price>
+   </sample>
+   <sample datetime="2025-05-23T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.38</price>
+   </sample>
+   <sample datetime="2025-05-23T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.05</price>
+   </sample>
+   <sample datetime="2025-05-23T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.14</price>
+   </sample>
+   <sample datetime="2025-05-23T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>24.54</price>
+   </sample>
+   <sample datetime="2025-05-23T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.73</price>
+   </sample>
+   <sample datetime="2025-05-23T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>20</sunshine>
+      <price>25.44</price>
+   </sample>
+   <sample datetime="2025-05-23T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>104</sunshine>
+      <price>34.56</price>
+   </sample>
+   <sample datetime="2025-05-23T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>22</sunshine>
+      <price>35.95</price>
+   </sample>
+   <sample datetime="2025-05-23T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>192</sunshine>
+      <price>34.14</price>
+   </sample>
+   <sample datetime="2025-05-23T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>245</sunshine>
+      <price>35.09</price>
+   </sample>
+   <sample datetime="2025-05-23T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>321</sunshine>
+      <price>41.88</price>
+   </sample>
+   <sample datetime="2025-05-23T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>393</sunshine>
+      <price>37.13</price>
+   </sample>
+   <sample datetime="2025-05-23T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>475</sunshine>
+      <price>41.37</price>
+   </sample>
+   <sample datetime="2025-05-23T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>373</sunshine>
+      <price>35.47</price>
+   </sample>
+   <sample datetime="2025-05-23T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>339</sunshine>
+      <price>40.45</price>
+   </sample>
+   <sample datetime="2025-05-23T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>455</sunshine>
+      <price>43.18</price>
+   </sample>
+   <sample datetime="2025-05-23T16:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>370</sunshine>
+      <price>31.45</price>
+   </sample>
+   <sample datetime="2025-05-23T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>242</sunshine>
+      <price>39.47</price>
+   </sample>
+   <sample datetime="2025-05-23T18:00:00" cluster="2" recommendation="SELL">
+      <sunshine>116</sunshine>
+      <price>43.59</price>
+   </sample>
+   <sample datetime="2025-05-23T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>20</sunshine>
+      <price>41.25</price>
+   </sample>
+   <sample datetime="2025-05-23T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.97</price>
+   </sample>
+   <sample datetime="2025-05-23T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.65</price>
+   </sample>
+   <sample datetime="2025-05-23T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.03</price>
+   </sample>
+   <sample datetime="2025-05-23T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.55</price>
+   </sample>
+   <sample datetime="2025-05-24T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.2</price>
+   </sample>
+   <sample datetime="2025-05-24T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.37</price>
+   </sample>
+   <sample datetime="2025-05-24T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.54</price>
+   </sample>
+   <sample datetime="2025-05-24T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.04</price>
+   </sample>
+   <sample datetime="2025-05-24T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.88</price>
+   </sample>
+   <sample datetime="2025-05-24T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>24</sunshine>
+      <price>26.99</price>
+   </sample>
+   <sample datetime="2025-05-24T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>134</sunshine>
+      <price>36.65</price>
+   </sample>
+   <sample datetime="2025-05-24T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>139</sunshine>
+      <price>35.02</price>
+   </sample>
+   <sample datetime="2025-05-24T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>297</sunshine>
+      <price>36.44</price>
+   </sample>
+   <sample datetime="2025-05-24T09:00:00" cluster="2" recommendation="SELL">
+      <sunshine>360</sunshine>
+      <price>40.01</price>
+   </sample>
+   <sample datetime="2025-05-24T10:00:00" cluster="2" recommendation="SELL">
+      <sunshine>461</sunshine>
+      <price>41.47</price>
+   </sample>
+   <sample datetime="2025-05-24T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>503</sunshine>
+      <price>37.88</price>
+   </sample>
+   <sample datetime="2025-05-24T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>616</sunshine>
+      <price>42.46</price>
+   </sample>
+   <sample datetime="2025-05-24T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>619</sunshine>
+      <price>37.64</price>
+   </sample>
+   <sample datetime="2025-05-24T14:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>475</sunshine>
+      <price>32.75</price>
+   </sample>
+   <sample datetime="2025-05-24T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>350</sunshine>
+      <price>35.84</price>
+   </sample>
+   <sample datetime="2025-05-24T16:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>58</sunshine>
+      <price>33.25</price>
+   </sample>
+   <sample datetime="2025-05-24T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>27</sunshine>
+      <price>40.81</price>
+   </sample>
+   <sample datetime="2025-05-24T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>1</sunshine>
+      <price>41.92</price>
+   </sample>
+   <sample datetime="2025-05-24T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>3</sunshine>
+      <price>46.89</price>
+   </sample>
+   <sample datetime="2025-05-24T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.84</price>
+   </sample>
+   <sample datetime="2025-05-24T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.42</price>
+   </sample>
+   <sample datetime="2025-05-24T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.52</price>
+   </sample>
+   <sample datetime="2025-05-24T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.44</price>
+   </sample>
+   <sample datetime="2025-05-25T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.33</price>
+   </sample>
+   <sample datetime="2025-05-25T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.4</price>
+   </sample>
+   <sample datetime="2025-05-25T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>24.9</price>
+   </sample>
+   <sample datetime="2025-05-25T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.15</price>
+   </sample>
+   <sample datetime="2025-05-25T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.54</price>
+   </sample>
+   <sample datetime="2025-05-25T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>16</sunshine>
+      <price>27.03</price>
+   </sample>
+   <sample datetime="2025-05-25T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>13</sunshine>
+      <price>37.13</price>
+   </sample>
+   <sample datetime="2025-05-25T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>47</sunshine>
+      <price>40.4</price>
+   </sample>
+   <sample datetime="2025-05-25T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>91</sunshine>
+      <price>36.22</price>
+   </sample>
+   <sample datetime="2025-05-25T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>137</sunshine>
+      <price>36.36</price>
+   </sample>
+   <sample datetime="2025-05-25T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>243</sunshine>
+      <price>37.48</price>
+   </sample>
+   <sample datetime="2025-05-25T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>257</sunshine>
+      <price>36.31</price>
+   </sample>
+   <sample datetime="2025-05-25T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>220</sunshine>
+      <price>41.35</price>
+   </sample>
+   <sample datetime="2025-05-25T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>316</sunshine>
+      <price>36.29</price>
+   </sample>
+   <sample datetime="2025-05-25T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>252</sunshine>
+      <price>39.07</price>
+   </sample>
+   <sample datetime="2025-05-25T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>62</sunshine>
+      <price>37.43</price>
+   </sample>
+   <sample datetime="2025-05-25T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>41</sunshine>
+      <price>40.3</price>
+   </sample>
+   <sample datetime="2025-05-25T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>30</sunshine>
+      <price>42.86</price>
+   </sample>
+   <sample datetime="2025-05-25T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>32</sunshine>
+      <price>44.97</price>
+   </sample>
+   <sample datetime="2025-05-25T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>14</sunshine>
+      <price>40.33</price>
+   </sample>
+   <sample datetime="2025-05-25T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>41.05</price>
+   </sample>
+   <sample datetime="2025-05-25T21:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.9</price>
+   </sample>
+   <sample datetime="2025-05-25T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.97</price>
+   </sample>
+   <sample datetime="2025-05-25T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.61</price>
+   </sample>
+   <sample datetime="2025-05-26T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.37</price>
+   </sample>
+   <sample datetime="2025-05-26T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.02</price>
+   </sample>
+   <sample datetime="2025-05-26T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.6</price>
+   </sample>
+   <sample datetime="2025-05-26T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.57</price>
+   </sample>
+   <sample datetime="2025-05-26T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.69</price>
+   </sample>
+   <sample datetime="2025-05-26T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.61</price>
+   </sample>
+   <sample datetime="2025-05-26T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>5</sunshine>
+      <price>34.31</price>
+   </sample>
+   <sample datetime="2025-05-26T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>48</sunshine>
+      <price>33.37</price>
+   </sample>
+   <sample datetime="2025-05-26T08:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>32.3</price>
+   </sample>
+   <sample datetime="2025-05-26T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>38.85</price>
+   </sample>
+   <sample datetime="2025-05-26T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>19</sunshine>
+      <price>40.82</price>
+   </sample>
+   <sample datetime="2025-05-26T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>45</sunshine>
+      <price>38.69</price>
+   </sample>
+   <sample datetime="2025-05-26T12:00:00" cluster="2" recommendation="SELL">
+      <sunshine>130</sunshine>
+      <price>39.7</price>
+   </sample>
+   <sample datetime="2025-05-26T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>210</sunshine>
+      <price>35.48</price>
+   </sample>
+   <sample datetime="2025-05-26T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>181</sunshine>
+      <price>46.2</price>
+   </sample>
+   <sample datetime="2025-05-26T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>226</sunshine>
+      <price>39.25</price>
+   </sample>
+   <sample datetime="2025-05-26T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>297</sunshine>
+      <price>39.19</price>
+   </sample>
+   <sample datetime="2025-05-26T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>138</sunshine>
+      <price>44.04</price>
+   </sample>
+   <sample datetime="2025-05-26T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>25</sunshine>
+      <price>43.3</price>
+   </sample>
+   <sample datetime="2025-05-26T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>42.53</price>
+   </sample>
+   <sample datetime="2025-05-26T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>39.49</price>
+   </sample>
+   <sample datetime="2025-05-26T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.8</price>
+   </sample>
+   <sample datetime="2025-05-26T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.62</price>
+   </sample>
+   <sample datetime="2025-05-26T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.55</price>
+   </sample>
+   <sample datetime="2025-05-27T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.05</price>
+   </sample>
+   <sample datetime="2025-05-27T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.84</price>
+   </sample>
+   <sample datetime="2025-05-27T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.88</price>
+   </sample>
+   <sample datetime="2025-05-27T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.61</price>
+   </sample>
+   <sample datetime="2025-05-27T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.97</price>
+   </sample>
+   <sample datetime="2025-05-27T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>11</sunshine>
+      <price>30.05</price>
+   </sample>
+   <sample datetime="2025-05-27T06:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>65</sunshine>
+      <price>32.48</price>
+   </sample>
+   <sample datetime="2025-05-27T07:00:00" cluster="2" recommendation="SELL">
+      <sunshine>130</sunshine>
+      <price>38.92</price>
+   </sample>
+   <sample datetime="2025-05-27T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>322</sunshine>
+      <price>35.54</price>
+   </sample>
+   <sample datetime="2025-05-27T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>418</sunshine>
+      <price>35.01</price>
+   </sample>
+   <sample datetime="2025-05-27T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>335</sunshine>
+      <price>35.82</price>
+   </sample>
+   <sample datetime="2025-05-27T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>130</sunshine>
+      <price>33.9</price>
+   </sample>
+   <sample datetime="2025-05-27T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>103</sunshine>
+      <price>41.33</price>
+   </sample>
+   <sample datetime="2025-05-27T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>82</sunshine>
+      <price>39.08</price>
+   </sample>
+   <sample datetime="2025-05-27T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>29</sunshine>
+      <price>34.99</price>
+   </sample>
+   <sample datetime="2025-05-27T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>79</sunshine>
+      <price>34.97</price>
+   </sample>
+   <sample datetime="2025-05-27T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>74</sunshine>
+      <price>37.85</price>
+   </sample>
+   <sample datetime="2025-05-27T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>144</sunshine>
+      <price>46.87</price>
+   </sample>
+   <sample datetime="2025-05-27T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>18</sunshine>
+      <price>41.08</price>
+   </sample>
+   <sample datetime="2025-05-27T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>9</sunshine>
+      <price>37.35</price>
+   </sample>
+   <sample datetime="2025-05-27T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>41.12</price>
+   </sample>
+   <sample datetime="2025-05-27T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.31</price>
+   </sample>
+   <sample datetime="2025-05-27T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.47</price>
+   </sample>
+   <sample datetime="2025-05-27T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.75</price>
+   </sample>
+   <sample datetime="2025-05-28T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.4</price>
+   </sample>
+   <sample datetime="2025-05-28T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.25</price>
+   </sample>
+   <sample datetime="2025-05-28T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>31.56</price>
+   </sample>
+   <sample datetime="2025-05-28T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>30.11</price>
+   </sample>
+   <sample datetime="2025-05-28T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.32</price>
+   </sample>
+   <sample datetime="2025-05-28T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>8</sunshine>
+      <price>25.65</price>
+   </sample>
+   <sample datetime="2025-05-28T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>64</sunshine>
+      <price>41.01</price>
+   </sample>
+   <sample datetime="2025-05-28T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>69</sunshine>
+      <price>35.98</price>
+   </sample>
+   <sample datetime="2025-05-28T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>51</sunshine>
+      <price>35.89</price>
+   </sample>
+   <sample datetime="2025-05-28T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>46</sunshine>
+      <price>35.81</price>
+   </sample>
+   <sample datetime="2025-05-28T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>63</sunshine>
+      <price>39.45</price>
+   </sample>
+   <sample datetime="2025-05-28T11:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>53</sunshine>
+      <price>38.43</price>
+   </sample>
+   <sample datetime="2025-05-28T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>72</sunshine>
+      <price>37.14</price>
+   </sample>
+   <sample datetime="2025-05-28T13:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>37.22</price>
+   </sample>
+   <sample datetime="2025-05-28T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>38.76</price>
+   </sample>
+   <sample datetime="2025-05-28T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>19</sunshine>
+      <price>37.23</price>
+   </sample>
+   <sample datetime="2025-05-28T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>44</sunshine>
+      <price>36.72</price>
+   </sample>
+   <sample datetime="2025-05-28T17:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>26</sunshine>
+      <price>42.18</price>
+   </sample>
+   <sample datetime="2025-05-28T18:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>30</sunshine>
+      <price>41.1</price>
+   </sample>
+   <sample datetime="2025-05-28T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>5</sunshine>
+      <price>46.37</price>
+   </sample>
+   <sample datetime="2025-05-28T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.91</price>
+   </sample>
+   <sample datetime="2025-05-28T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.04</price>
+   </sample>
+   <sample datetime="2025-05-28T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>36.35</price>
+   </sample>
+   <sample datetime="2025-05-28T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.71</price>
+   </sample>
+   <sample datetime="2025-05-29T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.17</price>
+   </sample>
+   <sample datetime="2025-05-29T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.12</price>
+   </sample>
+   <sample datetime="2025-05-29T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.04</price>
+   </sample>
+   <sample datetime="2025-05-29T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.3</price>
+   </sample>
+   <sample datetime="2025-05-29T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.64</price>
+   </sample>
+   <sample datetime="2025-05-29T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>12</sunshine>
+      <price>31.36</price>
+   </sample>
+   <sample datetime="2025-05-29T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>65</sunshine>
+      <price>37.73</price>
+   </sample>
+   <sample datetime="2025-05-29T07:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>39</sunshine>
+      <price>38.4</price>
+   </sample>
+   <sample datetime="2025-05-29T08:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>184</sunshine>
+      <price>37.3</price>
+   </sample>
+   <sample datetime="2025-05-29T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>247</sunshine>
+      <price>33.6</price>
+   </sample>
+   <sample datetime="2025-05-29T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>80</sunshine>
+      <price>37.29</price>
+   </sample>
+   <sample datetime="2025-05-29T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>415</sunshine>
+      <price>40.33</price>
+   </sample>
+   <sample datetime="2025-05-29T12:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>186</sunshine>
+      <price>35.19</price>
+   </sample>
+   <sample datetime="2025-05-29T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>374</sunshine>
+      <price>41</price>
+   </sample>
+   <sample datetime="2025-05-29T14:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>381</sunshine>
+      <price>38.14</price>
+   </sample>
+   <sample datetime="2025-05-29T15:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>415</sunshine>
+      <price>37.74</price>
+   </sample>
+   <sample datetime="2025-05-29T16:00:00" cluster="2" recommendation="SELL">
+      <sunshine>356</sunshine>
+      <price>40.99</price>
+   </sample>
+   <sample datetime="2025-05-29T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>234</sunshine>
+      <price>43.19</price>
+   </sample>
+   <sample datetime="2025-05-29T18:00:00" cluster="2" recommendation="SELL">
+      <sunshine>117</sunshine>
+      <price>40.78</price>
+   </sample>
+   <sample datetime="2025-05-29T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>20</sunshine>
+      <price>45.34</price>
+   </sample>
+   <sample datetime="2025-05-29T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>38.62</price>
+   </sample>
+   <sample datetime="2025-05-29T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.09</price>
+   </sample>
+   <sample datetime="2025-05-29T22:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>35.05</price>
+   </sample>
+   <sample datetime="2025-05-29T23:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.24</price>
+   </sample>
+   <sample datetime="2025-05-30T00:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>28.51</price>
+   </sample>
+   <sample datetime="2025-05-30T01:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>25.36</price>
+   </sample>
+   <sample datetime="2025-05-30T02:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>29.71</price>
+   </sample>
+   <sample datetime="2025-05-30T03:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>27.49</price>
+   </sample>
+   <sample datetime="2025-05-30T04:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>26.81</price>
+   </sample>
+   <sample datetime="2025-05-30T05:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>32</sunshine>
+      <price>29.96</price>
+   </sample>
+   <sample datetime="2025-05-30T06:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>141</sunshine>
+      <price>34.45</price>
+   </sample>
+   <sample datetime="2025-05-30T07:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>284</sunshine>
+      <price>33.04</price>
+   </sample>
+   <sample datetime="2025-05-30T08:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>440</sunshine>
+      <price>32.75</price>
+   </sample>
+   <sample datetime="2025-05-30T09:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>565</sunshine>
+      <price>37.07</price>
+   </sample>
+   <sample datetime="2025-05-30T10:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>681</sunshine>
+      <price>35.02</price>
+   </sample>
+   <sample datetime="2025-05-30T11:00:00" cluster="2" recommendation="SELL">
+      <sunshine>749</sunshine>
+      <price>44.12</price>
+   </sample>
+   <sample datetime="2025-05-30T12:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>772</sunshine>
+      <price>32.61</price>
+   </sample>
+   <sample datetime="2025-05-30T13:00:00" cluster="2" recommendation="SELL">
+      <sunshine>741</sunshine>
+      <price>43.95</price>
+   </sample>
+   <sample datetime="2025-05-30T14:00:00" cluster="2" recommendation="SELL">
+      <sunshine>673</sunshine>
+      <price>39.49</price>
+   </sample>
+   <sample datetime="2025-05-30T15:00:00" cluster="2" recommendation="SELL">
+      <sunshine>565</sunshine>
+      <price>38.57</price>
+   </sample>
+   <sample datetime="2025-05-30T16:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>423</sunshine>
+      <price>37.23</price>
+   </sample>
+   <sample datetime="2025-05-30T17:00:00" cluster="2" recommendation="SELL">
+      <sunshine>272</sunshine>
+      <price>43.06</price>
+   </sample>
+   <sample datetime="2025-05-30T18:00:00" cluster="2" recommendation="SELL">
+      <sunshine>130</sunshine>
+      <price>41.75</price>
+   </sample>
+   <sample datetime="2025-05-30T19:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>30</sunshine>
+      <price>45.17</price>
+   </sample>
+   <sample datetime="2025-05-30T20:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>42.2</price>
+   </sample>
+   <sample datetime="2025-05-30T21:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>34.16</price>
+   </sample>
+   <sample datetime="2025-05-30T22:00:00" cluster="0" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.13</price>
+   </sample>
+   <sample datetime="2025-05-30T23:00:00" cluster="1" recommendation="HOLD">
+      <sunshine>0</sunshine>
+      <price>33.75</price>
+   </sample>
+</clusters>
