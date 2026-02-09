@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Einfache XML-Fehlerseite für das SolarDecision Hub Projekt -->
+<error-page>
+    <title>SolarDecision Hub - Fehler</title>
+    <heading>Ups! Ein Fehler ist aufgetreten.</heading>
+    <message>
+        <![CDATA[Der Server konnte Ihre Anfrage momentan nicht bearbeiten.]]>
+    </message>
+    <details>
+        <![CDATA[Es ist ein interner Serverfehler (HTTP 500) aufgetreten. Bitte versuchen Sie es später erneut oder kontaktieren Sie den Support, falls das Problem bestehen bleibt.]]>
+    </details>
+    <navigation>
+        <link href="/">Zurück zur Startseite</link>
+    </navigation>
+</error-page>
