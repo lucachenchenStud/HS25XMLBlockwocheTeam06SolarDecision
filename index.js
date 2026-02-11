@@ -3,6 +3,8 @@ const path = require('path')
 const fs = require('fs')
 const libxmljs = require('libxmljs2')
 const app = express()
+const { execFile } = require('child_process')
+
 
 const schemaCache = new Map();
 
@@ -11,8 +13,28 @@ app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve('web', 'index.xml'));
+    const dt = (req.query.dt || '').trim()
+
+    const saxonJar = path.resolve('tools', 'saxon-he.jar')
+    const xmlPath = path.resolve('data', 'recommendation.xml')
+    const xslPath = path.resolve('dashboard.xsl')
+
+    const args = [
+        '-jar', saxonJar,
+        `-s:${xmlPath}`,
+        `-xsl:${xslPath}`,
+        dt ? `dt=${dt}` : null
+    ].filter(Boolean)
+
+    execFile('java', args, { maxBuffer: 50 * 1024 * 1024 }, (err, stdout, stderr) => {
+        if (err) {
+            res.status(500).type('text/plain').send(stderr || err.message)
+            return
+        }
+        res.status(200).type('application/xhtml+xml').send(stdout)
+    })
 })
+
 
 app.post('/convertToPdf', async (req, res) => {
     const response = await fetch('https://fop.xml.hslu-edu.ch/fop.php', {

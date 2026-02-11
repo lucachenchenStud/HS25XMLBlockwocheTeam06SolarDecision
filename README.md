@@ -58,4 +58,6 @@ java -jar tools\saxon-he.jar -xsl:csv_to_sunshine_xml.xsl -it:main -o:data/sunsh
 
 java -jar tools/saxon-he.jar -xsl:cluster_recommendations.xsl -it:main -o:data/recommendation.xml prices-uri=data/prices.xml sunshine-uri=data/sunshine.xml
 
+## Dashboard Creation
 
+java -jar tools\saxon-he.jar -s:data\recommendation.xml -xsl:dashboard.xsl -o:web\dashboard.xhtml
