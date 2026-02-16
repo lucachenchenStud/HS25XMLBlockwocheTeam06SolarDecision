@@ -10,7 +10,7 @@
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
 
     <!-- Date time selected by user -->
-    <xsl:param name="dt" as="xs:string" select="''"/>
+    <xsl:param name="dt" as="xs:string" select="'2025-05-01T12:00'"/>
 
     <!-- ========= Helpers ========= -->
 
@@ -296,7 +296,9 @@
                             <form method="get" action="/" style="display:flex; gap:10px; align-items:center; margin:0;">
                                 <label for="dt" class="dt-label">Zeitpunkt</label>
                                 <input id="dt" name="dt" type="datetime-local" class="dt-input"
-                                       value="{if ($dtNorm != '') then substring($dtNorm, 1, 16) else ''}"/>
+                                       min="2025-05-01T00:00" 
+                                       max="2025-05-30T23:00"
+                                       value="{if ($dtNorm != '') then substring($dtNorm, 1, 16) else '2025-05-01T12:00'}"/>
                                 <button class="btn primary" type="submit">Empfehlung anzeigen</button>
                             </form>
                             
