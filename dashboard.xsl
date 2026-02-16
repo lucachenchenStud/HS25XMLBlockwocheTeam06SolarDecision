@@ -494,130 +494,50 @@
         <xsl:param name="maxv" as="xs:decimal"/>
         <xsl:param name="p33" as="xs:decimal"/>
         <xsl:param name="p66" as="xs:decimal"/>
-
+        
         <xsl:variable name="w" select="380"/>
         <xsl:variable name="h" select="240"/>
         <xsl:variable name="cx" select="$w div 2"/>
         <xsl:variable name="cy" select="180"/>
         <xsl:variable name="r" select="130"/>
-
-        <xsl:variable name="v" select="f:clamp($value, $minv, $maxv)"/>
+        <xsl:variable name="pi_r" select="3.14159 * $r"/>
+        
+        <xsl:variable name="v" select="if ($value &lt; $minv) then $minv else if ($value &gt; $maxv) then $maxv else $value"/>
         <xsl:variable name="t" select="if ($maxv = $minv) then 0.5 else (($v - $minv) div ($maxv - $minv))"/>
-        <xsl:variable name="deg" select="round((180 - (180 * $t)) div 5) * 5"/>
-        <xsl:variable name="len" select="$r - 30"/>
-
-        <xsl:variable name="ux">
-            <xsl:choose>
-                <xsl:when test="$deg = 0">1</xsl:when>
-                <xsl:when test="$deg = 5">0.9962</xsl:when>
-                <xsl:when test="$deg = 10">0.9848</xsl:when>
-                <xsl:when test="$deg = 15">0.9659</xsl:when>
-                <xsl:when test="$deg = 20">0.9397</xsl:when>
-                <xsl:when test="$deg = 25">0.9063</xsl:when>
-                <xsl:when test="$deg = 30">0.8660</xsl:when>
-                <xsl:when test="$deg = 35">0.8192</xsl:when>
-                <xsl:when test="$deg = 40">0.7660</xsl:when>
-                <xsl:when test="$deg = 45">0.7071</xsl:when>
-                <xsl:when test="$deg = 50">0.6428</xsl:when>
-                <xsl:when test="$deg = 55">0.5736</xsl:when>
-                <xsl:when test="$deg = 60">0.5000</xsl:when>
-                <xsl:when test="$deg = 65">0.4226</xsl:when>
-                <xsl:when test="$deg = 70">0.3420</xsl:when>
-                <xsl:when test="$deg = 75">0.2588</xsl:when>
-                <xsl:when test="$deg = 80">0.1736</xsl:when>
-                <xsl:when test="$deg = 85">0.0872</xsl:when>
-                <xsl:when test="$deg = 90">0</xsl:when>
-                <xsl:when test="$deg = 95">-0.0872</xsl:when>
-                <xsl:when test="$deg = 100">-0.1736</xsl:when>
-                <xsl:when test="$deg = 105">-0.2588</xsl:when>
-                <xsl:when test="$deg = 110">-0.3420</xsl:when>
-                <xsl:when test="$deg = 115">-0.4226</xsl:when>
-                <xsl:when test="$deg = 120">-0.5000</xsl:when>
-                <xsl:when test="$deg = 125">-0.5736</xsl:when>
-                <xsl:when test="$deg = 130">-0.6428</xsl:when>
-                <xsl:when test="$deg = 135">-0.7071</xsl:when>
-                <xsl:when test="$deg = 140">-0.7660</xsl:when>
-                <xsl:when test="$deg = 145">-0.8192</xsl:when>
-                <xsl:when test="$deg = 150">-0.8660</xsl:when>
-                <xsl:when test="$deg = 155">-0.9063</xsl:when>
-                <xsl:when test="$deg = 160">-0.9397</xsl:when>
-                <xsl:when test="$deg = 165">-0.9659</xsl:when>
-                <xsl:when test="$deg = 170">-0.9848</xsl:when>
-                <xsl:when test="$deg = 175">-0.9962</xsl:when>
-                <xsl:otherwise>-1</xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-
-        <xsl:variable name="uy">
-            <xsl:choose>
-                <xsl:when test="$deg = 0">0</xsl:when>
-                <xsl:when test="$deg = 5">0.0872</xsl:when>
-                <xsl:when test="$deg = 10">0.1736</xsl:when>
-                <xsl:when test="$deg = 15">0.2588</xsl:when>
-                <xsl:when test="$deg = 20">0.3420</xsl:when>
-                <xsl:when test="$deg = 25">0.4226</xsl:when>
-                <xsl:when test="$deg = 30">0.5000</xsl:when>
-                <xsl:when test="$deg = 35">0.5736</xsl:when>
-                <xsl:when test="$deg = 40">0.6428</xsl:when>
-                <xsl:when test="$deg = 45">0.7071</xsl:when>
-                <xsl:when test="$deg = 50">0.7660</xsl:when>
-                <xsl:when test="$deg = 55">0.8192</xsl:when>
-                <xsl:when test="$deg = 60">0.8660</xsl:when>
-                <xsl:when test="$deg = 65">0.9063</xsl:when>
-                <xsl:when test="$deg = 70">0.9397</xsl:when>
-                <xsl:when test="$deg = 75">0.9659</xsl:when>
-                <xsl:when test="$deg = 80">0.9848</xsl:when>
-                <xsl:when test="$deg = 85">0.9962</xsl:when>
-                <xsl:when test="$deg = 90">1</xsl:when>
-                <xsl:when test="$deg = 95">0.9962</xsl:when>
-                <xsl:when test="$deg = 100">0.9848</xsl:when>
-                <xsl:when test="$deg = 105">0.9659</xsl:when>
-                <xsl:when test="$deg = 110">0.9397</xsl:when>
-                <xsl:when test="$deg = 115">0.9063</xsl:when>
-                <xsl:when test="$deg = 120">0.8660</xsl:when>
-                <xsl:when test="$deg = 125">0.8192</xsl:when>
-                <xsl:when test="$deg = 130">0.7660</xsl:when>
-                <xsl:when test="$deg = 135">0.7071</xsl:when>
-                <xsl:when test="$deg = 140">0.6428</xsl:when>
-                <xsl:when test="$deg = 145">0.5736</xsl:when>
-                <xsl:when test="$deg = 150">0.5000</xsl:when>
-                <xsl:when test="$deg = 155">0.4226</xsl:when>
-                <xsl:when test="$deg = 160">0.3420</xsl:when>
-                <xsl:when test="$deg = 165">0.2588</xsl:when>
-                <xsl:when test="$deg = 170">0.1736</xsl:when>
-                <xsl:when test="$deg = 175">0.0872</xsl:when>
-                <xsl:otherwise>0</xsl:otherwise>
-            </xsl:choose>
-        </xsl:variable>
-
-        <xsl:variable name="nx" select="$cx + (xs:decimal($ux) * $len)"/>
-        <xsl:variable name="ny" select="$cy - (xs:decimal($uy) * $len)"/>
-
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {$w} {$h}" role="img" aria-label="Gauge">
-            <!-- left red -->
-            <path d="M { $cx - $r } { $cy } A { $r } { $r } 0 0 1 { $cx - ($r * 0.2) } { $cy - ($r * 0.98) }"
-                  fill="none" stroke="#f04438" stroke-width="28" stroke-linecap="round"/>
-
-            <!-- middle gray -->
-            <path d="M { $cx - ($r * 0.2) } { $cy - ($r * 0.98) } A { $r } { $r } 0 0 1 { $cx + ($r * 0.2) } { $cy - ($r * 0.98) }"
-                  fill="none" stroke="#d0d5dd" stroke-width="28" stroke-linecap="round"/>
-
-            <!-- right green -->
-            <path d="M { $cx + ($r * 0.2) } { $cy - ($r * 0.98) } A { $r } { $r } 0 0 1 { $cx + $r } { $cy }"
-                  fill="none" stroke="#84cc16" stroke-width="28" stroke-linecap="round"/>
-
-
-            <line class="needle" x1="{$cx}" y1="{$cy}" x2="{format-number($nx,'0.##')}" y2="{format-number($ny,'0.##')}"/>
-            <circle class="needle-dot" cx="{$cx}" cy="{$cy}" r="10"/>
-
-            <text class="axis-text" x="{ $cx - $r + 6 }" y="{ $cy + 40 }">
+        <xsl:variable name="angle" select="180 * $t"/> 
+        
+        <xsl:variable name="f25" select="0.25"/>
+        <xsl:variable name="f75" select="0.75"/>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {$w} {$h}" role="img">
+            <path d="M { $cx - $r } { $cy } A { $r } { $r } 0 0 1 { $cx + $r } { $cy }"
+                  fill="none" stroke="#84cc16" stroke-width="28"
+                  stroke-dasharray="{ ($f25 * $pi_r) } { $pi_r }" />
+            
+            <path d="M { $cx - $r } { $cy } A { $r } { $r } 0 0 1 { $cx + $r } { $cy }"
+                  fill="none" stroke="#d0d5dd" stroke-width="28"
+                  stroke-dasharray="{ (0.50 * $pi_r) } { $pi_r }"
+                  stroke-dashoffset="-{ ($f25 * $pi_r) }" />
+            
+            <path d="M { $cx - $r } { $cy } A { $r } { $r } 0 0 1 { $cx + $r } { $cy }"
+                  fill="none" stroke="#f04438" stroke-width="28"
+                  stroke-dasharray="{ (0.25 * $pi_r) } { $pi_r }"
+                  stroke-dashoffset="-{ ($f75 * $pi_r) }" />
+            
+            <g transform="rotate({$angle - 180}, {$cx}, {$cy})">
+                <line x1="{$cx}" y1="{$cy}" x2="{$cx + $r - 25}" y2="{$cy}" 
+                      stroke="#101828" stroke-width="7" stroke-linecap="round"/>
+            </g>
+            <circle cx="{$cx}" cy="{$cy}" r="10" fill="#101828"/>
+            
+            <text x="{ $cx - $r - 15 }" y="{ $cy + 42 }" font-family="sans-serif" font-size="14" font-weight="600" fill="#667085">
                 <xsl:value-of select="format-number($minv, '0.00')"/>
             </text>
-            <text class="axis-text" x="{ $cx + $r - 46 }" y="{ $cy + 40 }">
+            <text x="{ $cx + $r + 15 }" y="{ $cy + 42 }" font-family="sans-serif" font-size="14" font-weight="600" fill="#667085" text-anchor="end">
                 <xsl:value-of select="format-number($maxv, '0.00')"/>
             </text>
-
-            <text x="{$cx}" y="{ $cy + 65 }" text-anchor="middle" font-size="34" font-weight="900" fill="#101828">
+            
+            <text x="{$cx}" y="{ $cy + 42 }" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="900" fill="#101828">
                 <xsl:value-of select="format-number($value, '0.00')"/>
                 <xsl:text> CHF/kWh</xsl:text>
             </text>
