@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture for /updateData endpoint; used to exercise XML write + XSD validation in dev/container runs. -->
+<database>
+    <plant>
+        <name>ExamplePlant</name>
+        <statistics>
+            <price date="2025-05-01T12:00:00">14.25</price>
+        </statistics>
+    </plant>
+</database>
