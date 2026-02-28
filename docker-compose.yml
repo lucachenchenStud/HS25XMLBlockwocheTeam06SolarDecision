@@ -1,0 +1,11 @@
+services:
+  solardecision-hub:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      PDF_RENDERER: ${PDF_RENDERER:-local}
+      FOP_REMOTE_URL: ${FOP_REMOTE_URL:-https://fop.xml.hslu-edu.ch/fop.php}
+    restart: unless-stopped

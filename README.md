@@ -61,3 +61,34 @@ java -jar tools/saxon-he.jar -xsl:cluster_recommendations.xsl -it:main -o:data/r
 ## Dashboard Creation
 
 java -jar tools\saxon-he.jar -s:data\recommendation.xml -xsl:dashboard.xsl -o:web\dashboard.xhtml
+
+## PDF Generation (XSL-FO)
+
+Die PDF-Generierung läuft jetzt lokal über:
+
+1. `data/recommendation.xml` + `xslt/fo/report.fo.xsl` -> FO (Saxon)
+2. FO -> PDF (Apache FOP)
+
+### PDF Renderer per Env Var
+
+Im Docker-Setup kann das PDF-Rendering umgeschaltet werden:
+
+- `PDF_RENDERER=local` (Standard): lokale Erstellung mit Apache FOP im Container
+- `PDF_RENDERER=remote`: Sendet das erzeugte FO an einen externen FOP-Service
+- `FOP_REMOTE_URL`: Ziel-URL für `remote` (Standard: `https://fop.xml.hslu-edu.ch/fop.php`)
+
+Beispiel lokal (FOP im Container):
+
+```bash
+PDF_RENDERER=local docker compose up --build
+```
+
+Beispiel mit Original-Endpoint:
+
+```bash
+PDF_RENDERER=remote FOP_REMOTE_URL=https://fop.xml.hslu-edu.ch/fop.php docker compose up --build
+```
+
+### Errorview
+
+The errorview can be tested by using an incorrect query param `https://localhost:3000/report.pdf?dt=not-a-date"

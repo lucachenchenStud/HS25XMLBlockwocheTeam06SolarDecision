@@ -1,17 +1,132 @@
 const express = require('express')
 const path = require('path')
 const fs = require('fs')
+const os = require('os') // used for temporary directory management
 const libxmljs = require('libxmljs2')
 const app = express()
 const { execFile } = require('child_process')
 
 const schemaCache = new Map();
+// Choose between local Apache FOP rendering and remote FOP service rendering.
+const PDF_RENDERER = (process.env.PDF_RENDERER || 'local').trim().toLowerCase()
+const FOP_REMOTE_URL = (process.env.FOP_REMOTE_URL || 'https://fop.xml.hslu-edu.ch/fop.php').trim()
 
 app.use(express.static(__dirname));
 app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', (req, res) => {
+function runCommand(command, args, options = {}) {
+    // Run shell commands in one place so the rest of the code can simply use await + try/catch.
+    return new Promise((resolve, reject) => {
+        // Keep one shared process config (e.g. larger output buffer for Saxon/FOP logs).
+        execFile(command, args, { maxBuffer: 50 * 1024 * 1024, ...options }, (err, stdout, stderr) => {
+            if (err) {
+                // Normalize subprocess failures into one consistent error shape.
+                const message = (stderr || err.message || '').trim()
+                reject(new Error(`${command} failed: ${message}`))
+                return
+            }
+            resolve({ stdout, stderr })
+        })
+    })
+}
+
+function createHttpError(status, message) {
+    // Helper to pass HTTP status + message into Express error middleware.
+    const err = new Error(message)
+    err.status = status
+    return err
+}
+
+async function renderErrorView(statusCode, title, message, requestPath) {
+    // Build the error page by transforming error.xml with the XSLT error view.
+    const saxonJar = path.resolve('tools', 'saxon-he.jar')
+    const xmlPath = path.resolve('web', 'error.xml')
+    const xslPath = path.resolve('xslt', 'views', 'error-view.xsl')
+
+    const args = [
+        '-jar', saxonJar,
+        `-s:${xmlPath}`,
+        `-xsl:${xslPath}`,
+        `statusCode=${String(statusCode)}`,
+        `title=${title || 'Internal Server Error'}`,
+        `message=${message || 'Unexpected error'}`,
+        `requestPath=${requestPath || '/'}`
+    ]
+
+    const { stdout } = await runCommand('java', args)
+    return stdout
+}
+
+async function generateFoReport(dt) {
+    // Step 1: recommendation XML -> FO file (via Saxon).
+    const saxonJar = path.resolve('tools', 'saxon-he.jar')
+    const xmlPath = path.resolve('data', 'recommendation.xml')
+    const xslPath = path.resolve('xslt', 'fo', 'report.fo.xsl')
+    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'solardecision-'))
+    const foPath = path.join(tempDir, 'report.fo')
+    const dtParam = (dt || '').trim()
+
+    const saxonArgs = [
+        '-jar', saxonJar,
+        `-s:${xmlPath}`,
+        `-xsl:${xslPath}`,
+        `-o:${foPath}`,
+        `dt=${dtParam}`
+    ]
+
+    try {
+        await runCommand('java', saxonArgs)
+        return fs.readFileSync(foPath)
+    } finally {
+        fs.rmSync(tempDir, { recursive: true, force: true })
+    }
+}
+
+async function renderPdfLocal(foBuffer) {
+    // Step 2a: FO -> PDF using local Apache FOP binary.
+    const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), 'solardecision-'))
+    const foPath = path.join(tempDir, 'report.fo')
+    const pdfPath = path.join(tempDir, 'report.pdf')
+
+    try {
+        fs.writeFileSync(foPath, foBuffer)
+        await runCommand('fop', ['-fo', foPath, '-pdf', pdfPath])
+        return fs.readFileSync(pdfPath)
+    } finally {
+        fs.rmSync(tempDir, { recursive: true, force: true })
+    }
+}
+
+async function renderPdfRemote(foBuffer) {
+    // Step 2b: FO -> PDF by sending FO to remote FOP endpoint.
+    const response = await fetch(FOP_REMOTE_URL, {
+        method: 'POST',
+        body: foBuffer,
+        headers: {
+            'Content-Type': 'application/xml'
+        }
+    })
+
+    if (!response.ok) {
+        const responseText = await response.text()
+        throw new Error(`Remote FOP failed (${response.status}): ${responseText}`)
+    }
+
+    const arrayBuffer = await response.arrayBuffer()
+    return Buffer.from(arrayBuffer)
+}
+
+async function generatePdfReport(dt) {
+    // Single entry point for the full report pipeline (XML -> FO -> PDF).
+    const foBuffer = await generateFoReport(dt)
+    if (PDF_RENDERER === 'remote') {
+        return renderPdfRemote(foBuffer)
+    }
+    return renderPdfLocal(foBuffer)
+}
+
+app.get('/', (req, res, next) => {
     const dt = (req.query.dt || '').trim()
 
     const saxonJar = path.resolve('tools', 'saxon-he.jar')
@@ -27,51 +142,93 @@ app.get('/', (req, res) => {
 
     execFile('java', args, { maxBuffer: 50 * 1024 * 1024 }, (err, stdout, stderr) => {
         if (err) {
-            res.status(500).type('text/plain').send(stderr || err.message)
+            next(createHttpError(500, stderr || err.message))
             return
         }
         res.status(200).type('application/xhtml+xml').send(stdout)
     })
 })
 
-app.post('/convertToPdf', async (req, res) => {
-    const response = await fetch('https://fop.xml.hslu-edu.ch/fop.php', {
-        method: "POST",
-        mode: "cors",
-        cache: "no-cache",
-        credentials: "same-origin",
-        body: req.body,
-    });
-    const responseText = await (await response.blob()).arrayBuffer()
-    const buffer = Buffer.from(responseText)
-    fs.writeFileSync(path.resolve('temp.pdf'), buffer)
-    res.sendFile(path.resolve('temp.pdf'))
-})
+app.get('/report.pdf', async (req, res, next) => {
+    try {
+        const dt = (req.query.dt || '').trim()
+        const pdfBuffer = await generatePdfReport(dt)
+        const safeDt = dt ? dt.replace(/[^0-9T-]/g, '_') : 'latest'
 
-app.post('/updateData', (req, res) => {
-    const dataToUpdate = req.body
-    // read database xml
-    const databasePath = path.resolve('data', 'database.xml');
-    const databaseXml = fs.readFileSync(databasePath, 'utf-8')
-    const xmlDocDatabase = libxmljs.parseXml(databaseXml)
-    // select node to update
-    const plantStatistics = xmlDocDatabase.get(`//plant[name="${dataToUpdate.plant}"]/statistics`);
-    // create new node with attribute etc.
-    plantStatistics.node('price', dataToUpdate.price).attr('date', dataToUpdate.date)
-    console.log(xmlDocDatabase.toString())
-
-    // validate new database against schema
-    const valid = validateDatabase(xmlDocDatabase)
-    if (!valid) {
-        res.status(400).send('Invalid XML')
-        return
+        res.setHeader('Content-Type', 'application/pdf')
+        res.setHeader('Content-Disposition', `attachment; filename=\"solar-report-${safeDt}.pdf\"`)
+        res.status(200).send(pdfBuffer)
+    } catch (err) {
+        console.error('PDF generation failed:', err.message)
+        next(createHttpError(500, err.message))
     }
-    // write new database.xml
-    fs.writeFileSync(databasePath, xmlDocDatabase.toString(), 'utf-8')
-    res.sendStatus(200)
 })
 
-app.get('/feedback', (req, res) => {
+app.post('/convertToPdf', async (req, res, next) => {
+    try {
+        const dt = typeof req.body === 'string'
+            ? req.body.trim()
+            : ((req.body && req.body.dt) ? String(req.body.dt).trim() : '')
+        const pdfBuffer = await generatePdfReport(dt)
+        res.setHeader('Content-Type', 'application/pdf')
+        res.status(200).send(pdfBuffer)
+    } catch (err) {
+        console.error('PDF generation failed:', err.message)
+        next(createHttpError(500, err.message))
+    }
+})
+
+app.post('/updateData', (req, res, next) => {
+    try {
+        // Normalize incoming values and reject incomplete updates early.
+        const dataToUpdate = (req.body && typeof req.body === 'object') ? req.body : {}
+        const plantName = String(dataToUpdate.plant || '').trim()
+        const priceValue = String(dataToUpdate.price || '').trim()
+        const dateValue = String(dataToUpdate.date || '').trim()
+
+        if (!plantName || !priceValue || !dateValue) {
+            res.status(400).send('Missing required fields: plant, price, date')
+            return
+        }
+
+        const databasePath = path.resolve('data', 'database.xml')
+        const databaseXml = fs.readFileSync(databasePath, 'utf-8')
+        const xmlDocDatabase = libxmljs.parseXml(databaseXml)
+
+        const plants = xmlDocDatabase.find('//plant')
+        // Match by plant name instead of building XPath with raw user input.
+        const selectedPlant = plants.find((plantNode) => {
+            const nameNode = plantNode.get('./name')
+            return nameNode && nameNode.text().trim() === plantName
+        })
+
+        if (!selectedPlant) {
+            res.status(404).send(`Unknown plant: ${plantName}`)
+            return
+        }
+
+        const plantStatistics = selectedPlant.get('./statistics')
+        if (!plantStatistics) {
+            return next(createHttpError(500, `Plant has no statistics node: ${plantName}`))
+        }
+
+        plantStatistics.node('price', priceValue).attr('date', dateValue)
+
+        const valid = validateDatabase(xmlDocDatabase)
+        if (!valid) {
+            // Keep invalid XML out of the persisted data file.
+            res.status(400).send('Invalid XML')
+            return
+        }
+
+        fs.writeFileSync(databasePath, xmlDocDatabase.toString(), 'utf-8')
+        res.sendStatus(200)
+    } catch (err) {
+        next(err)
+    }
+})
+
+app.get('/feedback', (req, res, next) => {
     const saxonJar = path.resolve('tools', 'saxon-he.jar')
     const xmlPath = path.resolve('data', 'feedback.xml')
     const xslPath = path.resolve('xslt', 'views', 'feedback.xsl')
@@ -90,7 +247,7 @@ app.get('/feedback', (req, res) => {
     execFile('java', args, { maxBuffer: 50 * 1024 * 1024 }, (err, stdout, stderr) => {
         if (err) {
             console.error("Java Saxon Error:", stderr)
-            res.status(500).type('text/plain').send("Transformation Error: " + (stderr || err.message))
+            next(createHttpError(500, "Transformation Error: " + (stderr || err.message)))
             return;
         }
         // Send the output as XHTML/HTML
@@ -147,6 +304,11 @@ function validatePrices(xmlDoc) {
     return validate(xmlDoc, pricesSchema)
 }
 
+function validateDatabase(xmlDoc) {
+    const databaseSchema = fs.readFileSync(path.resolve('schema', 'database.xsd'), 'utf-8')
+    return validate(xmlDoc, databaseSchema)
+}
+
 function validateUV(xmlDoc) {
     const uvSchema = fs.readFileSync(path.resolve('schema', 'sunshine.xsd'), 'utf-8')
     return validate(xmlDoc, uvSchema)
@@ -174,6 +336,30 @@ function validateFeedbackForm(xmlDoc) {
     }
 }
 
+app.use(async (err, req, res, next) => {
+    // Centralized fallback for unexpected server errors.
+    if (res.headersSent) {
+        next(err)
+        return
+    }
+
+    const statusCode = Number(err.status || 500)
+    const normalizedStatus = statusCode >= 400 ? statusCode : 500
+    const title = normalizedStatus === 404 ? 'Not Found' : 'Internal Server Error'
+    const message = err && err.message ? err.message : 'Unexpected error'
+
+    console.error('Serverfehler:', err && err.stack ? err.stack : err)
+
+    try {
+        const html = await renderErrorView(normalizedStatus, title, message, req.originalUrl || req.path || '/')
+        res.status(normalizedStatus).type('text/html').send(html)
+    } catch (renderErr) {
+        console.error('Error view rendering failed:', renderErr.message)
+        res.status(500).type('text/plain').send('Internal Server Error')
+    }
+})
+
 app.listen(3000, () => {
     console.log('listen on port', 3000)
+    console.log('pdf renderer:', PDF_RENDERER === 'remote' ? `remote (${FOP_REMOTE_URL})` : 'local')
 })
