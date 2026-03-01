@@ -49,19 +49,6 @@ Eine schlanke, standardkonforme Plattform, die XML nicht nur als Datenformat nut
 
 ---
 
-## Data Setup 
-
-java -jar tools/saxon-he.jar -xsl:csv_to_prices_xml.xsl -it:main -o:data/prices.xml csv-uri=imports/prices.csv
-java -jar tools\saxon-he.jar -xsl:csv_to_sunshine_xml.xsl -it:main -o:data/sunshine.xml csv-uri=imports/sunshine.csv
-
-## Recommendation Engine
-
-java -jar tools/saxon-he.jar -xsl:cluster_recommendations.xsl -it:main -o:data/recommendation.xml prices-uri=data/prices.xml sunshine-uri=data/sunshine.xml
-
-## Dashboard Creation
-
-java -jar tools\saxon-he.jar -s:data\recommendation.xml -xsl:dashboard.xsl -o:web\dashboard.xhtml
-
 ## PDF Generation (XSL-FO)
 
 Die PDF-Generierung läuft jetzt lokal über:
