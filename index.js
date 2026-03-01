@@ -5,6 +5,7 @@ const os = require('os') // used for temporary directory management
 const libxmljs = require('libxmljs2')
 const app = express()
 const { execFile } = require('child_process')
+const { pathToFileURL } = require('url')
 
 const schemaCache = new Map();
 // Choose between local Apache FOP rendering and remote FOP service rendering.
@@ -14,6 +15,35 @@ const FOP_REMOTE_URL = (process.env.FOP_REMOTE_URL || 'https://fop.xml.hslu-edu.
 app.use(express.static(__dirname));
 app.use(express.text());
 app.use(express.urlencoded({ extended: false }));
+
+function runJava(args) {
+    return new Promise((resolve, reject) => {
+        execFile('java', args, { maxBuffer: 200 * 1024 * 1024 }, (err, stdout, stderr) => {
+            if (err) {
+                reject(new Error(stderr || err.message))
+                return
+            }
+            resolve(stdout)
+        })
+    })
+}
+
+function mtimeSafe(p) {
+    try {
+        return fs.statSync(p).mtimeMs
+    } catch {
+        return 0
+    }
+}
+
+function needsRebuild(outputPath, inputPaths) {
+    const outTime = mtimeSafe(outputPath)
+    if (outTime === 0) return true
+    for (const inp of inputPaths) {
+        if (mtimeSafe(inp) > outTime) return true
+    }
+    return false
+}
 
 function runCommand(command, args, options = {}) {
     // Run shell commands in one place so the rest of the code can simply use await + try/catch.
@@ -126,27 +156,74 @@ async function generatePdfReport(dt) {
     return renderPdfLocal(foBuffer)
 }
 
-app.get('/', (req, res, next) => {
-    const dt = (req.query.dt || '').trim()
+app.get('/', async (req, res, next) => {
+    try {
+        const dt = (req.query.dt || '').trim()
 
-    const saxonJar = path.resolve('tools', 'saxon-he.jar')
-    const xmlPath = path.resolve('data', 'recommendation.xml')
-    const xslPath = path.resolve('dashboard.xsl')
+        const saxonJar = path.resolve('tools', 'saxon-he.jar')
 
-    const args = [
-        '-jar', saxonJar,
-        `-s:${xmlPath}`,
-        `-xsl:${xslPath}`,
-        dt ? `dt=${dt}` : null
-    ].filter(Boolean)
+        const pricesCsv = path.resolve('imports', 'prices.csv')
+        const sunshineCsv = path.resolve('imports', 'sunshine.csv')
 
-    execFile('java', args, { maxBuffer: 50 * 1024 * 1024 }, (err, stdout, stderr) => {
-        if (err) {
-            next(createHttpError(500, stderr || err.message))
-            return
+        const pricesXml = path.resolve('data', 'prices.xml')
+        const sunshineXml = path.resolve('data', 'sunshine.xml')
+        const recommendationXml = path.resolve('data', 'recommendation.xml')
+
+        const xslPrices = path.resolve('csv_to_prices_xml.xsl')
+        const xslSunshine = path.resolve('csv_to_sunshine_xml.xsl')
+        const xslRecom = path.resolve('cluster_recommendations.xsl')
+        const xslDashboard = path.resolve('dashboard.xsl') // or scripts/dashboard.xsl if you store it there
+
+        // 1) CSV -> prices.xml
+        if (needsRebuild(pricesXml, [pricesCsv, xslPrices])) {
+            const args = [
+                '-jar', saxonJar,
+                `-xsl:${xslPrices}`,
+                '-it:main',
+                `-o:${pricesXml}`,
+                `csv-uri=${pathToFileURL(pricesCsv).href}`
+            ]
+            await runJava(args)
         }
-        res.status(200).type('application/xhtml+xml').send(stdout)
-    })
+
+        // 2) CSV -> sunshine.xml
+        if (needsRebuild(sunshineXml, [sunshineCsv, xslSunshine])) {
+            const args = [
+                '-jar', saxonJar,
+                `-xsl:${xslSunshine}`,
+                '-it:main',
+                `-o:${sunshineXml}`,
+                `csv-uri=${pathToFileURL(sunshineCsv).href}`
+            ]
+            await runJava(args)
+        }
+
+        // 3) prices.xml + sunshine.xml -> recommendation.xml
+        if (needsRebuild(recommendationXml, [pricesXml, sunshineXml, xslRecom])) {
+            const args = [
+                '-jar', saxonJar,
+                `-xsl:${xslRecom}`,
+                '-it:main',
+                `-o:${recommendationXml}`,
+                `prices-uri=${pathToFileURL(pricesXml).href}`,
+                `sunshine-uri=${pathToFileURL(sunshineXml).href}`
+            ]
+            await runJava(args)
+        }
+
+        // 4) recommendation.xml -> XHTML (stdout)
+        const dashArgs = [
+            '-jar', saxonJar,
+            `-s:${recommendationXml}`,
+            `-xsl:${xslDashboard}`,
+            dt ? `dt=${dt}` : null
+        ].filter(Boolean)
+
+        const xhtml = await runJava(dashArgs)
+        res.status(200).type('application/xhtml+xml').send(xhtml)
+    } catch (e) {
+        next(createHttpError(500, e.message))
+    }
 })
 
 app.get('/report.pdf', async (req, res, next) => {
