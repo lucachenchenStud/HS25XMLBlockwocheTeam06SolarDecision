@@ -375,27 +375,10 @@ function validate(xmlDoc, xmlSchema) {
     const xmlDocDatabaseXsd = libxmljs.parseXml(xmlSchema)
     return xmlDoc.validate(xmlDocDatabaseXsd)
 }
-
-function validatePrices(xmlDoc) {
-    const pricesSchema = fs.readFileSync(path.resolve('schema', 'prices.xsd'), 'utf-8')
-    return validate(xmlDoc, pricesSchema)
-}
-
 function validateDatabase(xmlDoc) {
     const databaseSchema = fs.readFileSync(path.resolve('schema', 'database.xsd'), 'utf-8')
     return validate(xmlDoc, databaseSchema)
 }
-
-function validateUV(xmlDoc) {
-    const uvSchema = fs.readFileSync(path.resolve('schema', 'sunshine.xsd'), 'utf-8')
-    return validate(xmlDoc, uvSchema)
-}
-
-function validateRecommendation(xmlDoc) {
-    const recommendationSchema = fs.readFileSync(path.resolve('schema', 'recommendation.xsd'), 'utf-8')
-    return validate(xmlDoc, recommendationSchema)
-}
-
 function validateFeedbackForm(xmlDoc) {
     try {
         const schemaPath = path.resolve('schema', 'feedback.xsd')
