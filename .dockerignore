@@ -1,0 +1,26 @@
+# Abhängigkeiten (WICHTIG: Verhindert Architektur-Konflikte)
+node_modules
+npm-debug.log
+
+# Build-Artefakte & Caches
+dist
+build
+.npm
+.cache
+
+# Git-Metadaten
+.git
+.gitignore
+
+# Lokale Umgebungsvariablen (Sicherheit!)
+.env
+.env.local
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
+
+# Docker-spezifische Dateien (müssen nicht in den Container selbst)
+Dockerfile
+docker-compose.yml
+.dockerignore

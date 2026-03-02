@@ -9,7 +9,7 @@ const { pathToFileURL } = require('url')
 
 const schemaCache = new Map();
 // Choose between local Apache FOP rendering and remote FOP service rendering.
-const PDF_RENDERER = (process.env.PDF_RENDERER || 'local').trim().toLowerCase()
+const PDF_RENDERER = (process.env.PDF_RENDERER || 'remote').trim().toLowerCase()
 const FOP_REMOTE_URL = (process.env.FOP_REMOTE_URL || 'https://fop.xml.hslu-edu.ch/fop.php').trim()
 
 app.use(express.static(__dirname));
@@ -150,10 +150,10 @@ async function renderPdfRemote(foBuffer) {
 async function generatePdfReport(dt) {
     // Single entry point for the full report pipeline (XML -> FO -> PDF).
     const foBuffer = await generateFoReport(dt)
-    if (PDF_RENDERER === 'remote') {
-        return renderPdfRemote(foBuffer)
+    if (PDF_RENDERER === 'local') {
+        return renderPdfLocal(foBuffer)
     }
-    return renderPdfLocal(foBuffer)
+    return renderPdfRemote(foBuffer)
 }
 
 app.get('/', async (req, res, next) => {
