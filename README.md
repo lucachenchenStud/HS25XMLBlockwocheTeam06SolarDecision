@@ -6,6 +6,22 @@ Die Plattform ist bewusst **XML-zentrisch** aufgebaut und nutzt XML-Technologien
 
 ---
 
+## SolarDecision Hub starten
+
+Start mit HSLU FOP Service:
+
+```bash
+npm start
+```
+
+Start mit lokalem Docker FOP Service:
+
+```bash
+docker compose up --build
+```
+
+---
+
 ## Kernidee
 
 Solaranlagenbesitzer stehen vor Entscheidungsunsicherheit aufgrund stark schwankender Strompreise und unvorhersehbarer Energieverfügbarkeit. SolarDecision Hub schafft Transparenz und Entscheidungsunterstützung durch:
@@ -56,26 +72,6 @@ Die PDF-Generierung läuft lokal über:
 1. `data/recommendation.xml` + `xslt/fo/report.fo.xsl` → FO (Saxon)
 2. FO → PDF (Apache FOP)
 
-### PDF Renderer per Env Var
-
-Im Docker-Setup kann das PDF-Rendering umgeschaltet werden:
-
-- `PDF_RENDERER=local` (Standard): lokale Erstellung mit Apache FOP im Container
-- `PDF_RENDERER=remote`: Sendet das erzeugte FO an einen externen FOP-Service
-- `FOP_REMOTE_URL`: Ziel-URL für `remote` (Standard: `https://fop.xml.hslu-edu.ch/fop.php`)
-
-Beispiel lokal:
-
-```bash
-PDF_RENDERER=local docker compose up --build
-```
-
-Beispiel mit externem Endpoint:
-
-```bash
-PDF_RENDERER=remote FOP_REMOTE_URL=https://fop.xml.hslu-edu.ch/fop.php docker compose up --build
-```
-
 ---
 
 Export Endpoint (/report.pdf)
@@ -83,19 +79,11 @@ Export Endpoint (/report.pdf)
 Der PDF-Export wird über den HTTP-Endpunkt /report.pdf bereitgestellt.
 Der Endpunkt akzeptiert optionale Query-Parameter (z. B. dt) zur zeitlichen Auswahl der Datenbasis.
 
-Das Rendering-Verhalten wird über Environment-Variablen gesteuert:
-
-- `PDF_RENDERER=local` → lokale PDF-Erstellung mit Apache FOP im Container
-
-- `PDF_RENDERER=remote` → Weiterleitung des FO-Dokuments an einen externen FOP-Service
-
-- `FOP_REMOTE_URL` → Konfiguration des Remote-Endpunkts
-
-Diese Konfigurierbarkeit ermöglicht unterschiedliche Deployment-Szenarien, ohne die XML-Transformationslogik zu verändern.
+Das Rendering-Verhalten wird über die Startparameter (inkl Docker oder npm nativ) gesteuert.
 
 ---
 
-Error View Darstellung (XHTML)
+## Error View Darstellung (XHTML)
 
 Die Fehlerdarstellung erfolgt über ein separates XSLT-2.0-Stylesheet, das eine XHTML-1.0-Strict Seite erzeugt.
 
